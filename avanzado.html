@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO -->
+    
+    <!-- Descripción del sitio -->
+    <meta name="description"
+        content="En este apartado se explican los conceptos más difíciles de comprender y está orientado a aquellos que ya tienen más experiencia jugando al lol.">
+    
+    <!-- Palabras clave -->
+    <meta name="keywords"
+        content="lolguides , league of legends , adc , guía , micro , macro , kiteo , tradeos , objetos, runas , Triangulación ,">
+    
+    <!-- Tipo de letra y fontawesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7938c03883.js" crossorigin="anonymous"></script>
+    
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    
+    <!-- Link a mi css -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Conociemiento Avanzado</title>
+</head>
+
+<body>
+    <!-- encabezado -->
+    <header class="encabezado">
+        <!-- Logo -->
+        <nav class="navbar nav-menu fixed-top">
+            <div class="container-fluid cont-logo-btn">
+                <a href="Index.html">
+                    <img class="logo" src="/imgs/LOGO.png" alt="Logo de League of Legends">
+                </a>
+                <div class="cont-boton-responsive">
+                    <button class="boton-novisible" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <!-- icono visible hamburguesa -->
+                        <i class="fas fa-bars boton-responsive"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- todo esto va dentro del desplegable -->
+
+            <!-- este div es el fondo del menu desplegable -->
+            <div class="offcanvas offcanvas-end fondo-menu" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title lolguide" id="offcanvasNavbarLabel">Lolguides</h5>
+                    <button type="button" class="btn-close text-reset boton-cerrar" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active link" aria-current="page" href="Index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active link" href="fundamentos.html">Fundamentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active link" href="avanzado.html">Avanzado</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active link" href="adc.html">AdcGuide</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active link" href="Conoceme.html">Conoceme</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- cuerpo principal -->
+    <main id="main-avanzado">
+        <!-- titulo principal -->
+        <section class="section1-avanzado">
+            <div class="section1-avanzado__cont-titulo">
+                <h1>
+                    Conocimiento avanzado
+                </h1>
+            </div>
+        </section>
+        <!-- contenido principal -->
+        <section class="section2-avanzado">
+            <!-- explicacion sobre microgame -->
+            <!-- este div es para los trades -->
+            <div class="section2-avanzado__cont-textos">
+                <h2>Micro juego</h2>
+                <h3>¿Qué es el micro game?</h3>
+                <p>
+                    Para poder empezar a hablar sobre el, primero habría que definirlo. El micro game es todo aquello
+                    que está relacionado con los campeones y los enfrentamientos entre ellos. Además de sus objetos,
+                    runas, combos y el farmeo.
+                </p>
+                <div>
+                    <h3>Tradeos</h3>
+                    <img src="/imgs/imagenes-avanzado/trades.png" alt="dos campeones pegandose en la mid lane">
+                    <p>
+                        Se le llama trade a cuando intercambias golpes con el campeon enemigo. Estos trades pueden ser
+                        de
+                        duración larga
+                        o corta, dependiendo de que campeon seas y del campeon al que te enfrentes. Tradear de manera
+                        efectiva es determinante a la hora
+                        de ganar o de perder la linea. En el siguiente video voy a explicar en profundidad
+                        los siguientes aspectos: <br>
+                        *aprender el daño de tu campeon <br>
+                        *aprender los combos de tu campeon <br>
+                        *minions a favor o en contra <br>
+                        *ventaja de nivel <br>
+                        *aprovechar el lasthit del campeon enemigo <br>
+                        *runas <br>
+                        *aprender el rango de ataque de las torres <br>
+                        *habilidades en cooldown <br>
+                        *hechizos de invocador en cooldown <br>
+                        *zhonyas, cronometro o GA <br>
+                        *siempre tener en cuenta al jungla rival
+                    </p>
+                </div>
+                <!-- este div es para el wardeo -->
+                <div>
+                    <h3>Objetos</h3>
+                    <img src="/imgs/imagenes-avanzado/tienda.png" alt="Tienda de objetos del lol">
+                    <p>
+                        Como habíamos mencionado en la parte de fundamentos principales, la compra de objetos es una de
+                        las principales
+                        formas que tiene un campeon para poder escalar en la partida (aumentar su poder). Muchísimas
+                        veces los jugadores suelen
+                        copiar una build que ven en internet de un jugador profesional o de elo alto y la llevan a todas
+                        sus partidas sin pensar en por que
+                        ese jugador se la hace, y eso es un error. En el siguiente video voy a explicar los items core y
+                        los items situacionales.
+                    </p>
+                </div>
+                <div>
+                    <h3>Runas</h3>
+                    <img src="/imgs/imagenes-avanzado/runes.png" alt="página de runas">
+                    <p>
+                        Las runas cumplen un rol fundamental a la hora de ganar un trade o incluso una partida y al
+                        igual que como sucede con los objetos, muchas veces
+                        los jugadores copian runas de una página, cuando en realidad las runas que tenemos que llevar
+                        son muy situacionales. En el siguiente video explicaré las runas:
+                    </p>
+                </div>
+                <div>
+                    <h3>Farmeo</h3>
+                    <img src="/imgs/imagenes-avanzado/farm.png" alt="un campeón a punto de last hitear los súbditos">
+                    <p>
+                        El farmeo es la manera más facil que nos brinda el juego para poder escalar, y tener un buen
+                        farmeo puede llegar a ser incluso más importante que conseguir múltiples asesinatos sobre el
+                        enemigo.
+                        Lo "ideal" es tener aproximadamente 100 minions al minuto 10, aunque esto es algo irreal, sobre
+                        todo en partidas de elo bajo, ya que constantemente se fuerzan peleas. Si bien dije que el farm
+                        ideal es algo irreal,
+                        siempre hay que intentar ganar la mayor cantidad de oro posible. Por eso mi recomendación es que
+                        si sentis que te cuesta mucho hacer last hit sobre los minions, que te metas a la herramienta de
+                        practica a jugar solo
+                        e intentes llegar al farm que mencione anteriormente, utilizando solamente tus ataques básicos y
+                        sin comprar items (solo los iniciales). Si sentís que tu problema no es el last hit, pero aun
+                        así te cuesta llevar un buen farmeo
+                        en tus partidas, lo más probable es que no tengas conociemiento sobre el control de oleadas.
+                        Esto lo explicaré más adelante en la parte de macro game.
+                    </p>
+                </div>
+            </div>
+
+            <!-- explicacion sobre macrogame -->
+            <div class="section2-avanzado__cont-textos">
+                <h2>macro juego</h2>
+                <h3>¿Qué es el macro game?</h3>
+                <p>
+                    El Macro game es basicamente la toma de decisiones, en cuanto a estrategia, que se tomen durante la partida; es decir, 
+                    control de oleadas, presión de lineas, tempo, rotaciones, split push, objetivos, etc.    
+                </p>
+                <div>
+                    <h3>Tempo</h3>
+                    <p>
+                        El tempo es algo dificil de definir, pero es algo así como los factores que determinan que equipo tiene más prioridad y presión sobre algo en particular. Por ejemplo, si está por salir el dragón 
+                        y el equipo rojo ya volvió de base con sus items, y el equipo azul está con mitad de vida y con mucho oro sin utilizar, se dice que el equipo rojo tiene tempo sobre el dragón. <br>
+                        Los factores que determinan el tempo pueden ser: estadísticas de cada campeón, power spike, habilidades en cooldown, a que distancia se está del objetivo, la superioridad numérica, etc.
+                    </p>
+                </div>
+                <div>
+                    <h3>Control de oleadas</h3>
+                    <p>
+                        El control de oleadas es algo fundamental, ya que con este se puede sacar muchísima ventaja sobre el enemigo, y sin un buen control de oleadas, por 
+                        más de que sepas last hitear bien, nunca vas a terminar con un buen farmeo. No solo eso, sino que también un buen control de oleadas puede significar que generemos tempo.
+                        Por eso en los siguientes videos voy a explicar todas las estrategias de control de oleadas, cuando se usan y sus ventajas, junto con sus desventajas.
+                    </p>
+                    <h4>Pusheo y prioridad de linea</h4>
+                    <h4>Reset de oleadas</h4>
+                    <h4>Rebote de oleadas</h4>
+                    <h4>Freezeo</h4>
+                </div>
+                <div>
+                    <h3>Estructuras</h3>
+                    <p>
+                        Toda acción en el lol tiene consecuencias, tanto positivas como negativas, y tirar una torre/inhibidor no es la excepción. 
+                        En el siguiente video voy a explicar que es lo que sucede cuando tiramos una estructura:
+                    </p>
+                </div>
+                <div>
+                    <h3>Visión</h3>
+                    <p>
+                        La visión es un factor muy importante, no solo a la hora de evitar gankeos, sino que también sirve para trackear al jungla enemigo
+                        o para preparar un objetivo.
+                    </p>
+                    <h3>Fase de lineas:</h3>
+                    <p>
+                        Voy a explicar como wardear en fase de lineas como support, top y mid. Adc y jungla voy a explicarlos luego de manera más particular, ya que la jungla es un rol 
+                        muy diferente y lo de adc lo voy a explicar de manera más profunda en la guía especializada para adcs.
+                    </p>
+                    <h4>Top</h4>
+                    <h4>Mid</h4>
+                    <h4>Support</h4>  
+                    <h3>Objetivos</h3>
+                    <p>
+                        En el siguiente video voy a explicar como setear vision en un objetivo.
+                    </p>                    
+                </div>
+            </div>
+            <div class="section2-avanzado__cont-textos">
+                <h2>Mentalidad</h2>
+                <p>
+                    En el siguiente video voy a explicar la importancia que
+                    contiene la mentalidad a la hora de jugar, no solo al League
+                    of Legends, sino que a culquier tipo de deporte.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- pie de página -->
+    <footer class="footer">
+        <!-- redes sociales -->
+        <div class="cont-redes">
+            <h2 class="cont-redes__titulo">información de Contacto:</h2>
+            <ul class="cont-redes__lista">
+                <li>
+                    <i class="fab fa-instagram icono-footer"></i> <a href="https://www.instagram.com/">Instagram</a>
+                </li>
+
+                <li>
+                    <i class="fab fa-facebook-square icono-footer"></i> <a href="https://www.facebook.com/">facebook</a>
+                </li>
+
+                <li>
+                    <i class="fab fa-twitch icono-footer"></i> <a href="https://www.twitch.tv/">Twitch</a>
+                </li>
+
+                <li>
+                    <i class="fab fa-youtube-square icono-footer"></i> <a href="https://www.youtube.com/">Youtube</a>
+                </li>
+            </ul>
+        </div>
+        <!-- derechos de autor -->
+        <div class="cont-derechos">
+            <p class="cont-derechos__texto">
+                Todos los derechos reservados: Matías Francisco sorgetti
+            </p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO -->
+    
+    <!-- Descripción del sitio -->
+    <meta name="description"
+        content="En este apartado se habla sobre mí y el por qué decidí crear esta página.">
+    
+    <!-- Palabras clave -->
+    <meta name="keywords"
+        content="lolguides , league of legends , adc , guía , micro , macro , kiteo , tradeos , objetos, runas , Triangulación ,">
+    
+    <!-- Tipo de letra y fontawesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7938c03883.js" crossorigin="anonymous"></script>
+    
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    
+    <!-- Link a mi css -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Conoceme</title>
+</head>
+
+<body>
+    <!-- encabezado -->
+    <header class="encabezado">
+        <!-- Logo -->
+        <nav class="navbar nav-menu fixed-top">
+            <div class="container-fluid cont-logo-btn">
+                <a href="Index.html">
+                    <img class="logo" src="/imgs/LOGO.png" alt="Logo de League of Legends">
+                </a>
+                <div class="cont-boton-responsive">
+                    <button class="boton-novisible" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <!-- icono visible hamburguesa -->
+                        <i class="fas fa-bars boton-responsive"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- todo esto va dentro del desplegable -->
+
+            <!-- este div es el fondo del menu desplegable -->
+            <div class="offcanvas offcanvas-end fondo-menu" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title lolguide" id="offcanvasNavbarLabel">Lolguides</h5>
+                    <button type="button" class="btn-close text-reset boton-cerrar" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active link" aria-current="page" href="Index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active link" href="fundamentos.html">Fundamentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active link" href="avanzado.html">Avanzado</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active link" href="adc.html">AdcGuide</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active link" href="Conoceme.html">Conoceme</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-conoceme">
+        <section class="section-conoceme">
+            <div class="section-conoceme__cont-texto">
+
+                <h2>Sobre mi</h2>
+                <p>
+                    Soy Zairos, un jugador amateur de League of Legends, juego en el servidor de Latino América
+                    Sur y
+                    hago streaming en twitch.
+                </p>
+                <h3>Cuenta de lol</h3>
+                <p>
+                    La cuenta en la que estoy jugando actualmente es:
+                    <a class="opgg" href="https://las.op.gg/summoner/userName=sh%C3%ADnichi+kudo">https://las.op.gg/summoner/userName=sh%C3%ADnichi+kudo</a>
+                </p>
+                <h2>Mis redes</h2>
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram section-conoceme__icono"><br>
+                                <h3>Instagram</h3>
+                            </i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/"><i
+                                class="fab fa-facebook-square section-conoceme__icono"><br>
+                                <h3>Facebook</h3>
+                            </i></a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="https://www.twitch.tv/"><i class="fab fa-twitch section-conoceme__icono"></i><br>
+                            <h3>Twitch</h3>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.youtube.com/"><i
+                                class="fab fa-youtube-square section-conoceme__icono"></i><br>
+                            <h3>Youtube</h3>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- pie de página -->
+    <footer class="footer">
+        <!-- redes sociales -->
+        <div class="cont-redes">
+            <h2 class="cont-redes__titulo">información de Contacto:</h2>
+            <ul class="cont-redes__lista">
+                <li>
+                    <i class="fab fa-instagram icono-footer"></i> <a href="https://www.instagram.com/">Instagram</a>
+                </li>
+
+                <li>
+                    <i class="fab fa-facebook-square icono-footer"></i> <a href="https://www.facebook.com/">facebook</a>
+                </li>
+
+                <li>
+                    <i class="fab fa-twitch icono-footer"></i> <a href="https://www.twitch.tv/">Twitch</a>
+                </li>
+
+                <li>
+                    <i class="fab fa-youtube-square icono-footer"></i> <a href="https://www.youtube.com/">Youtube</a>
+                </li>
+            </ul>
+        </div>
+        <!-- derechos de autor -->
+        <div class="cont-derechos">
+            <p class="cont-derechos__texto">
+                Todos los derechos reservados: Matías Francisco sorgetti
+            </p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+</body>

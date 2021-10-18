@@ -1,0 +1,567 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kaisei HarunoUmi", serif;
+}
+// css para el nav de bootstrap
+header {
+  width: 100vw;
+  .nav-menu {
+    background-color: #201f1f;
+
+    //   css para el nav no-desplegable
+    .cont-logo-btn {
+      .logo {
+        width: 12vw;
+      }
+      .cont-boton-responsive {
+        margin-right: 2vw;
+        .boton-novisible {
+          background-color: #201f1f;
+          border: none;
+          .boton-responsive {
+            font-size: 4vw;
+            color: #ffaa00;
+          }
+        }
+      }
+    }
+
+    // css para el nav desplegable
+    .fondo-menu {
+      background-color: #201f1f;
+      div {
+        .lolguide {
+          color: white;
+          font-size: 1.5vw;
+          text-transform: uppercase;
+        }
+        .boton-cerrar {
+          background-color: white;
+        }
+      }
+      div {
+        .link {
+          color: #ffaa00;
+          text-transform: uppercase;
+          padding: 2vw 0;
+          transition: all 1s;
+          font-size: 1.5vw;
+        }
+        .link:hover {
+          color: #ffffffea;
+        }
+      }
+    }
+  }
+}
+
+// css para el footer
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #201f1f;
+
+  // css para las redes sociales
+  .cont-redes {
+    &__titulo {
+      color: #ffaa00;
+      font-size: 2vw;
+      text-transform: capitalize;
+      padding: 3vw 0;
+      width: 40vw;
+      text-align: center;
+    }
+    &__lista {
+      color: #ffffffea;
+      list-style: none;
+      li {
+        padding-bottom: 2vw;
+        a {
+          color: #ffaa00;
+          text-decoration: none;
+          margin-left: 1vw;
+          font-size: 1.5vw;
+          transition: all 1s;
+        }
+        a:hover {
+          color: #ffffffea;
+        }
+      }
+    }
+  }
+
+  // css para los derechos de autor
+  .cont-derechos {
+    &__texto {
+      width: 40vw;
+      text-align: center;
+      font-size: 1.5vw;
+      color: #ffffffea;
+      padding-top: 1vh;
+      text-align: center;
+    }
+  }
+}
+
+// css para el main de Index
+
+// css para el banner
+.banner {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../imgs/banner-2-real.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(0.6);
+  background-attachment: fixed;
+}
+
+// css para el h1 del banner
+.cont-titulo-banner {
+  position: absolute;
+  text-align: center;
+  top: 35vh;
+  left: 15vw;
+  &__titulo {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 9vw;
+    animation-name: banner-animation;
+    animation-duration: 5s;
+  }
+  @keyframes banner-animation {
+    0% {
+      opacity: 0.2;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+// css para el contenido principal de Index
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10vh 0;
+  background-color: #262a31;
+  &__cont-textos {
+    text-align: left;
+    width: 50vw;
+    margin-bottom: 10vh;
+    h2 {
+      font-size: 2vw;
+      color: #ffaa00;
+      text-align: center;
+    }
+    p {
+      font-size: 1.5vw;
+      line-height: 3.5vw;
+      color: rgb(234 218 218);
+    }
+    img {
+      width: 50vw;
+      height: 55vh;
+      padding: 4vh 0;
+      max-width: 100%;
+    }
+  }
+}
+
+// css para fundamentos principales
+#main-fundamentos {
+  background-color: #262a31;
+
+  // css para el título de fundamentos
+  .cont-titulo-fund {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20vh;
+    &__titulo {
+      color: #ffaa00;
+      font-size: 3vw;
+    }
+  }
+
+  // css para el contenido principal de fundamentos
+  .section-fund {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__cont-texto {
+      width: 50vw;
+      padding: 7vh 0 0 0;
+      p {
+        font-size: 1.5vw;
+        color: #ffffffea;
+        line-height: 3vw;
+        padding-bottom: 5vh;
+        a {
+          color: #ffaa00;
+          font-size: 1.3vw;
+          text-decoration: none;
+          text-transform: uppercase;
+          padding-left: 1vw;
+        }
+      }
+      h4 {
+        text-align: left;
+        color: #ffaa00;
+        font-size: 1.8vw;
+        padding-top: 3vh;
+      }
+      h3 {
+        text-align: left;
+        color: #ffaa00;
+        font-size: 2.2vw;
+      }
+      h2 {
+        font-size: 2.8vw;
+        color: #ffaa00;
+        text-align: center;
+        padding-bottom: 5vh;
+      }
+      img {
+        padding: 3vh 0;
+        width: 50vw;
+      }
+    }
+  }
+}
+
+// css para Avanzado
+#main-avanzado {
+  background-color: #262a31;
+  // css para el titulo de avanzado
+  .section1-avanzado {
+    &__cont-titulo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 18vh;
+      h1 {
+        color: #ffaa00;
+        font-size: 3vw;
+      }
+    }
+  }
+  // css para el contenido principal de avanzado
+  .section2-avanzado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__cont-textos {
+      width: 50vw;
+      margin: 5vh 0;
+      h2 {
+        color: #ffaa00;
+        font-size: 2.5vw;
+        padding: 1vw 0;
+        text-align: center;
+      }
+      h3 {
+        color: #ffaa00;
+        font-size: 2vw;
+        padding-top: 5vw;
+        text-align: center;
+      }
+      h4 {
+        color: #ffaa00;
+        font-size: 1.8vw;
+        padding-top: 5vw;
+      }
+      p {
+        color: #ffffff;
+        font-size: 1.5vw;
+        line-height: 3vw;
+      }
+      img {
+        padding: 3vh 0;
+        width: 50vw;
+      }
+    }
+  }
+}
+
+// css para adcGuide
+#main-adc {
+  background-color: #262a31;
+  .section-guiaAdc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__cont-titulo {
+      padding-top: 18vh;
+      width: 40vw;
+      h1 {
+        font-size: 3vw;
+        color: #ffaa00;
+        text-align: center;
+      }
+    }
+    &__cont-texto {
+      width: 50vw;
+      h2 {
+        font-size: 2.3vw;
+        color: #ffaa00;
+        padding-top: 7vh;
+        text-align: center;
+      }
+      h3 {
+        color: #ffaa00;
+        font-size: 2vw;
+        padding-top: 4vw;
+      }
+      p {
+        text-align: left;
+        color: #ffffff;
+        font-size: 1.5vw;
+        padding: 1vw 0;
+        line-height: 3vw;
+      }
+      img {
+        padding: 3vh 0;
+        width: 50vw;
+      }
+    }
+  }
+}
+
+// css para conoceme
+#main-conoceme {
+  background-color: #262a31;
+  .section-conoceme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__cont-texto {
+      width: 55vw;
+      padding-top: 15vh;
+      h3 {
+        font-size: 2vw;
+        color: #ffaa00;
+        text-align: center;
+      }
+      h2 {
+        font-size: 2.5vw;
+        color: #ffaa00;
+        text-align: center;
+        padding-top: 8vh;
+      }
+      p {
+        text-align: left;
+        color: #ffffff;
+        font-size: 1.5vw;
+        line-height: 3vw;
+        padding-bottom: 10vh;
+      }
+      .opgg {
+        color: #ffaa00;
+      }
+      ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 15vh;
+      }
+      li {
+        padding: 5vh 5vw;
+      }
+    }
+    &__icono {
+      color: white;
+      font-size: 15vw;
+      text-decoration: none;
+    }
+  }
+}
+
+@media screen and (max-width: 860px) {
+  // css responsive para el header
+  header {
+    .nav-menu {
+      //   css para el nav no-desplegable
+      .cont-logo-btn {
+        .logo {
+          width: 18vw;
+        }
+        .cont-boton-responsive {
+          margin-right: 4vw;
+          .boton-novisible {
+            .boton-responsive {
+              font-size: 5vw;
+            }
+          }
+        }
+      }
+      // css para el nav desplegable
+      .fondo-menu {
+        div {
+          .lolguide {
+            font-size: 16px;
+          }
+          .boton-cerrar {
+            margin-right: 3vw;
+          }
+        }
+        div {
+          .link {
+            padding: 4vh 0;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  // css responsive para el footer
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #201f1f;
+
+    // css para las redes sociales
+    .cont-redes {
+      &__titulo {
+        font-size: 15px;
+        padding: 5vh 0 3vh 0;
+        width: 55vw;
+      }
+      &__lista {
+        li {
+          padding-bottom: 4vh;
+          a {
+            margin-left: 2vw;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+
+    // css para los derechos de autor
+    .cont-derechos {
+      &__texto {
+        width: 55vw;
+        font-size: 10px;
+        padding-top: 1vh;
+      }
+    }
+  }
+
+  // css responsive para el banner de index
+  .banner {
+    height: 80vh;
+  }
+  // css responsive para el main de index
+  .section {
+    &__cont-textos {
+      width: 70vw;
+      margin-bottom: 0;
+      h2 {
+        font-size: 16px;
+        color: #ffaa00;
+        text-align: center;
+        padding-top: 10vh;
+      }
+      p {
+        font-size: 14px;
+        line-height: 35px;
+      }
+      img {
+        width: 70vw;
+        height: auto;
+        padding: 4vh 0;
+        max-width: 100%;
+      }
+    }
+  }
+  // css responsive para fundamentos principales
+
+  #main-fundamentos {
+    // css responsive para el título de fundamentos
+    .cont-titulo-fund {
+      padding-top: 20vh;
+      &__titulo {
+        font-size: 20px;
+      }
+    }
+
+    // css responsive para el contenido principal de fundamentos
+    .section-fund {
+      &__cont-texto {
+        width: 70vw;
+        padding: 7vh 0 0 0;
+        p {
+          font-size: 13px;
+          line-height: 35px;
+          padding-bottom: 5vh;
+          a {
+            font-size: 12px;
+            padding-left: 2vw;
+          }
+        }
+        h4 {
+          font-size: 14px;
+          padding-top: 3vh;
+        }
+        h3 {
+          font-size: 14px;
+        }
+        h2 {
+          font-size: 17px;
+          padding-bottom: 5vh;
+        }
+        img {
+          padding: 2vh 0;
+          width: 70vw;
+        }
+      }
+    }
+  }
+
+  #main-avanzado {
+    // css para el titulo de avanzado
+    .section1-avanzado {
+      &__cont-titulo {
+        padding-top: 20vh;
+        h1 {
+          font-size: 19px;
+        }
+      }
+    }
+
+    // css para el contenido principal de avanzado
+    .section2-avanzado {
+      &__cont-textos {
+        width: 70vw;
+        margin: 5vh 0;
+        h2 {
+          font-size: 17px;
+          padding: 2vh 0;
+        }
+        h3 {
+          font-size: 15px;
+          padding-top: 5vw;
+        }
+        p {
+          font-size: 14px;
+          line-height: 35px;
+        }
+        img {
+          padding: 3vh 0;
+          width: 70vw;
+        }
+      }
+    }
+  }
+}
