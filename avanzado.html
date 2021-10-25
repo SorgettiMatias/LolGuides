@@ -21,6 +21,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7938c03883.js" crossorigin="anonymous"></script>
+
+    <!-- animaciones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -84,30 +87,30 @@
 
     <!-- cuerpo principal -->
     <main id="main-avanzado">
-        <!-- titulo principal -->
-        <section class="section1-avanzado">
-            <div class="section1-avanzado__cont-titulo">
-                <h1>
+        <!-- banner -->
+            <div class="banner-avanzado">
+            </div>
+            <div class="cont-titulo-avanzado">
+                <h1 class="cont-titulo-avanzado__titulo animate__animated animate__lightSpeedInLeft">
                     Conocimiento avanzado
                 </h1>
             </div>
-        </section>
         <!-- contenido principal -->
         <section class="section2-avanzado">
             <!-- explicacion sobre microgame -->
             <!-- este div es para los trades -->
             <div class="section2-avanzado__cont-textos">
-                <h2>Micro juego</h2>
-                <h3>¿Qué es el micro game?</h3>
-                <p>
+                <h2 class="wow animate__animated animate__fadeInLeftBig">Micro juego</h2>
+                <h3 class="wow animate__animated animate__fadeInLeftBig">¿Qué es el micro game?</h3>
+                <p class="wow animate__animated animate__fadeInLeftBig">
                     Para poder empezar a hablar sobre el, primero habría que definirlo. El micro game es todo aquello
                     que está relacionado con los campeones y los enfrentamientos entre ellos. Además de sus objetos,
                     runas, combos y el farmeo.
                 </p>
                 <div>
-                    <h3>Tradeos</h3>
-                    <img src="/imgs/imagenes-avanzado/trades.png" alt="dos campeones pegandose en la mid lane">
-                    <p>
+                    <h3 class="wow animate__animated animate__fadeInLeftBig">Tradeos</h3>
+                    <img class="wow animate__animated animate__fadeInLeftBig" src="/imgs/imagenes-avanzado/trades.png" alt="dos campeones pegandose en la mid lane">
+                    <p class="wow animate__animated animate__fadeInLeftBig">
                         Se le llama trade a cuando intercambias golpes con el campeon enemigo. Estos trades pueden ser
                         de
                         duración larga
@@ -117,6 +120,8 @@
                         los siguientes aspectos: <br>
                         *aprender el daño de tu campeon <br>
                         *aprender los combos de tu campeon <br>
+                        *saber el daño que puede hacer el enemigo <br>
+                        *saber que habilidad es primordial del enemigo <br>
                         *minions a favor o en contra <br>
                         *ventaja de nivel <br>
                         *aprovechar el lasthit del campeon enemigo <br>
@@ -128,11 +133,11 @@
                         *siempre tener en cuenta al jungla rival
                     </p>
                 </div>
-                <!-- este div es para el wardeo -->
+                <!-- este div es para la tienda -->
                 <div>
-                    <h3>Objetos</h3>
-                    <img src="/imgs/imagenes-avanzado/tienda.png" alt="Tienda de objetos del lol">
-                    <p>
+                    <h3 class="wow animate__animated animate__fadeInLeftBig">Objetos</h3>
+                    <img class="wow animate__animated animate__fadeInLeftBig" src="/imgs/imagenes-avanzado/tienda.png" alt="Tienda de objetos del lol">
+                    <p class="wow animate__animated animate__fadeInLeftBig">
                         Como habíamos mencionado en la parte de fundamentos principales, la compra de objetos es una de
                         las principales
                         formas que tiene un campeon para poder escalar en la partida (aumentar su poder). Muchísimas
@@ -143,20 +148,24 @@
                         los items situacionales.
                     </p>
                 </div>
+
+                <!-- este div es para las runas -->
                 <div>
-                    <h3>Runas</h3>
-                    <img src="/imgs/imagenes-avanzado/runes.png" alt="página de runas">
-                    <p>
+                    <h3 class="wow animate__animated animate__fadeInLeftBig">Runas</h3>
+                    <img class="wow animate__animated animate__fadeInLeftBig" src="/imgs/imagenes-avanzado/runes.png" alt="página de runas">
+                    <p class="wow animate__animated animate__fadeInLeftBig">
                         Las runas cumplen un rol fundamental a la hora de ganar un trade o incluso una partida y al
                         igual que como sucede con los objetos, muchas veces
                         los jugadores copian runas de una página, cuando en realidad las runas que tenemos que llevar
                         son muy situacionales. En el siguiente video explicaré las runas:
                     </p>
                 </div>
+
+                <!-- este div es para el farm -->
                 <div>
-                    <h3>Farmeo</h3>
-                    <img src="/imgs/imagenes-avanzado/farm.png" alt="un campeón a punto de last hitear los súbditos">
-                    <p>
+                    <h3 class="wow animate__animated animate__fadeInLeftBig">Farmeo</h3>
+                    <img class="wow animate__animated animate__fadeInLeftBig" src="/imgs/imagenes-avanzado/farm.png" alt="un campeón a punto de last hitear los súbditos">
+                    <p class="wow animate__animated animate__fadeInLeftBig">
                         El farmeo es la manera más facil que nos brinda el juego para poder escalar, y tener un buen
                         farmeo puede llegar a ser incluso más importante que conseguir múltiples asesinatos sobre el
                         enemigo.
@@ -177,65 +186,92 @@
 
             <!-- explicacion sobre macrogame -->
             <div class="section2-avanzado__cont-textos">
-                <h2>macro juego</h2>
-                <h3>¿Qué es el macro game?</h3>
-                <p>
+                <h2 class="wow animate__animated animate__fadeInLeftBig">macro juego</h2>
+                <h3 class="wow animate__animated animate__fadeInLeftBig">¿Qué es el macro game?</h3>
+                <p class="wow animate__animated animate__fadeInLeftBig">
                     El Macro game es basicamente la toma de decisiones, en cuanto a estrategia, que se tomen durante la partida; es decir, 
                     control de oleadas, presión de lineas, tempo, rotaciones, split push, objetivos, etc.    
                 </p>
+                <!-- explicacion del tempo -->
                 <div>
-                    <h3>Tempo</h3>
-                    <p>
+                    <h3 class="wow animate__animated animate__fadeInLeftBig">Tempo</h3>
+                    <p class="wow animate__animated animate__fadeInLeftBig">
                         El tempo es algo dificil de definir, pero es algo así como los factores que determinan que equipo tiene más prioridad y presión sobre algo en particular. Por ejemplo, si está por salir el dragón 
                         y el equipo rojo ya volvió de base con sus items, y el equipo azul está con mitad de vida y con mucho oro sin utilizar, se dice que el equipo rojo tiene tempo sobre el dragón. <br>
                         Los factores que determinan el tempo pueden ser: estadísticas de cada campeón, power spike, habilidades en cooldown, a que distancia se está del objetivo, la superioridad numérica, etc.
                     </p>
                 </div>
+
+                <!-- explicacion de como manejar las oleadas -->
                 <div>
-                    <h3>Control de oleadas</h3>
-                    <p>
+                    <h3 class="wow animate__animated animate__fadeInLeftBig">Control de oleadas</h3>
+                    <p class="wow animate__animated animate__fadeInLeftBig">
                         El control de oleadas es algo fundamental, ya que con este se puede sacar muchísima ventaja sobre el enemigo, y sin un buen control de oleadas, por 
                         más de que sepas last hitear bien, nunca vas a terminar con un buen farmeo. No solo eso, sino que también un buen control de oleadas puede significar que generemos tempo.
                         Por eso en los siguientes videos voy a explicar todas las estrategias de control de oleadas, cuando se usan y sus ventajas, junto con sus desventajas.
                     </p>
-                    <h4>Pusheo y prioridad de linea</h4>
-                    <h4>Reset de oleadas</h4>
-                    <h4>Rebote de oleadas</h4>
-                    <h4>Freezeo</h4>
+                    <h4 class="wow animate__animated animate__fadeInLeftBig">Pusheo y prioridad de linea</h4>
+                    <h4 class="wow animate__animated animate__fadeInLeftBig">Reset de oleadas</h4>
+                    <h4 class="wow animate__animated animate__fadeInLeftBig">Rebote de oleadas</h4>
+                    <h4 class="wow animate__animated animate__fadeInLeftBig">Freezeo</h4>
                 </div>
+
+                <!-- explicacion de que pasa al tirar estructuras -->
                 <div>
-                    <h3>Estructuras</h3>
-                    <p>
+                    <h3 class="wow animate__animated animate__fadeInLeftBig">Estructuras</h3>
+                    <p class="wow animate__animated animate__fadeInLeftBig">
                         Toda acción en el lol tiene consecuencias, tanto positivas como negativas, y tirar una torre/inhibidor no es la excepción. 
                         En el siguiente video voy a explicar que es lo que sucede cuando tiramos una estructura:
-                    </p>
+                    </p class="wow animate__animated animate__fadeInLeftBig">
                 </div>
+
+                <!-- explicación de como wardear -->
                 <div>
-                    <h3>Visión</h3>
-                    <p>
+                    <h3 class="wow animate__animated animate__fadeInLeftBig">Visión</h3>
+                    <p class="wow animate__animated animate__fadeInLeftBig">
                         La visión es un factor muy importante, no solo a la hora de evitar gankeos, sino que también sirve para trackear al jungla enemigo
                         o para preparar un objetivo.
                     </p>
-                    <h3>Fase de lineas:</h3>
-                    <p>
+                    <h3 class="wow animate__animated animate__fadeInLeftBig">Fase de lineas:</h3>
+                    <p class="wow animate__animated animate__fadeInLeftBig">
                         Voy a explicar como wardear en fase de lineas como support, top y mid. Adc y jungla voy a explicarlos luego de manera más particular, ya que la jungla es un rol 
                         muy diferente y lo de adc lo voy a explicar de manera más profunda en la guía especializada para adcs.
                     </p>
-                    <h4>Top</h4>
-                    <h4>Mid</h4>
-                    <h4>Support</h4>  
-                    <h3>Objetivos</h3>
-                    <p>
-                        En el siguiente video voy a explicar como setear vision en un objetivo.
+                    <h4 class="wow animate__animated animate__fadeInLeftBig">Top</h4>
+                    <h4 class="wow animate__animated animate__fadeInLeftBig">Mid</h4>
+                    <h4 class="wow animate__animated animate__fadeInLeftBig">Support</h4>  
+                    <h3 class="wow animate__animated animate__fadeInLeftBig">Objetivos</h3>
+                    <p class="wow animate__animated animate__fadeInLeftBig">
+                        En el siguiente video voy a explicar como setear un objetivo.
                     </p>                    
                 </div>
             </div>
+
+            <!-- la importancia de la mentalidad -->
             <div class="section2-avanzado__cont-textos">
-                <h2>Mentalidad</h2>
-                <p>
-                    En el siguiente video voy a explicar la importancia que
-                    contiene la mentalidad a la hora de jugar, no solo al League
-                    of Legends, sino que a culquier tipo de deporte.
+                <h2 class="wow animate__animated animate__fadeInLeftBig">Mentalidad</h2>
+                <p class="wow animate__animated animate__fadeInLeftBig">
+                   Lo primero que hay que tener en cuenta a la hora de hablar de la mentalidad, es que el lol es un juego de estrategía y que pensar correctamente es tan importante como las mecánicas
+                   que tengas con un campeón. Si realmente te interesa mejorar, tenés que utilizar el chat lo menos posible, comunicate por pings. Escribirle a tus compañeros de equipo la mayoría de veces es una pérdida
+                   de tiempo, arruina el ambiente e incluso muchas veces puede hacer que pierdas una partida, porque ambos jugadores están mas concentrados en lo que dice el otro que en intentar ganar. Vos tenés que concentrarte
+                   en jugar tu juego y hacer lo mejor posible, porque tu compañero no va a cambiar su forma de jugar, le digas lo que le digas, no pierdas tu tiempo escribiendole. <br>
+                   Muchas veces los jugadores de elos bajos suelen decir "yo no salgo de mi elo porque me tocan muchos trolls" y eso es una mentira. Todos pueden subir de división si verdaderamente se lo proponen; y proponerselo no es
+                   decir "voy a llegar a challenger en una semana", porque es irreal, proponerselo es intentar mejorar tu gameplay, mirar tus replays (solo concentrandote en vos y no en tu team) para ver en que te equivocaste y no volver a cometer el error en el siguiente game, mirar las partidas de jugadores
+                   profesionales o semi profesionales que juegan muchísimo mejor que vos, es decir, dedicarle tiempo al juego, pero dedicarle tiempo util, no jugar por jugar. 
+                   Si todavía crees que no salis de tu elo por los trolls, fijate que los jugadores de elo alto cuando smurfean tienen 100 porciento de win rate y están jugando con las mismas personas que vos.
+                </p>
+                <h3 class="wow animate__animated animate__fadeInLeftBig">Autocrítica</h3>
+                <p class="wow animate__animated animate__fadeInLeftBig">
+                    Para que un jugador pueda mejorar es fundamental que sea autocrítico y entienda que si bien no todas las partidas que se pierden son su culpa, muchas si lo son. Ser autocrítico no es decir "soy una mierda jugando al lol" y no hacer nada. Ser autocrítico requiere de tener capacidad de correción, es decir,
+                    buscar esos errores que cometiste durante la partida y aprender de ellos, pensar que hubiera pasado si yo hubiera hecho otra cosa, etc. Si bien dije que hay que ser autocrítico, no lo lleves al extremo, no te destruyas la mente porque una jugada te salió mal, porque te va a ser contra producente y vas a terminar 
+                    frustrado, porque nadie es perfecto y errores vas a cometer siempre.  
+                </p>
+                <h3 class="wow animate__animated animate__fadeInLeftBig">concentración</h3>
+                <p class="wow animate__animated animate__fadeInLeftBig">
+                    El League of Legends es un juego que demanda muchísima concentración, es decir que mientras jugamos no podemos estar mirando el celular, respondiendo whatsapp o hablando con la persona que tenemos al lado, sin que esto tenga una consecuencia negativa
+                    en el nivel de nuestro gameplay, por eso es que es recomendable evitar cualquier tipo de situación que nos pueda distraer, para estar 100 porciento focus en nuestro juego. A medida que juegues más va a haber cosas que antes te demandaban mucha concentración, pero con el paso del tiempo ya no lo hacen.
+                    Por ejemplo, si empezaste a jugar vayne hace poco, al principio farmear se te va a hacer dificil porque no estás acostumbrado al daño y la velocidad de ataque del campeon, pero cuando agarres más experiencia con vayne, vas a poder farmear bien de manera automatica, sin que tengas que perder concentración en ello. 
+                    Por eso es que es recomendable aprender a usar un campeon antes de llevarlo a ranked; pero esto no pasa solo con los campeones, pasa con cada conocimiento nuevo de micro game que vayas adquiriendo.
                 </p>
             </div>
         </section>
@@ -271,6 +307,10 @@
             </p>
         </div>
     </footer>
+    <script src="/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>

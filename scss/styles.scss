@@ -4,6 +4,67 @@
   box-sizing: border-box;
   font-family: "Kaisei HarunoUmi", serif;
 }
+
+// mixins para los banners
+@mixin banners {
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(0.6);
+  background-attachment: fixed;
+}
+@mixin cont-titulo-banner {
+  position: absolute;
+  text-align: center;
+}
+@mixin titulo-banner {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 9vw;
+}
+
+// mixins para los titulos, subtitulos y parrafos
+@mixin h4 {
+  text-align: left;
+  color: #fdbf42;
+  font-size: 2vw;
+  padding: 3vh 0;
+  text-transform: uppercase;
+}
+@mixin h3 {
+  text-align: center;
+  color: #fab62d;
+  font-size: 2.2vw;
+  font-weight: lighter;
+  padding: 4vh 0;
+  text-transform: uppercase;
+}
+@mixin h2 {
+  font-size: 2.5w;
+  color: #ffaa00;
+  text-align: center;
+  padding: 5vh 0;
+  font-weight: bolder;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+@mixin parrafo {
+  font-size: 1.5vw;
+  color: #ffffffea;
+  line-height: 3vw;
+  padding-bottom: 5vh;
+  text-align: left;
+}
+
+// mixins para los elementos flexibles
+@mixin flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 // css para el nav de bootstrap
 header {
   width: 100vw;
@@ -59,10 +120,7 @@ header {
 
 // css para el footer
 .footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flex;
   background-color: #201f1f;
 
   // css para las redes sociales
@@ -111,27 +169,21 @@ header {
 
 // css para el banner
 .banner {
-  width: 100vw;
-  height: 100vh;
   background-image: url(../imgs/banner-2-real.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  filter: brightness(0.6);
-  background-attachment: fixed;
+  @include banners;
 }
 
 // css para el h1 del banner
 .cont-titulo-banner {
-  position: absolute;
-  text-align: center;
+  @include cont-titulo-banner;
   top: 35vh;
   left: 15vw;
+  animation-name: zoomInDown;
+  animation-duration: 1s;
   &__titulo {
-    color: #ffffff;
-    text-transform: uppercase;
-    font-size: 9vw;
+    @include titulo-banner;
     animation-name: banner-animation;
-    animation-duration: 5s;
+    animation-duration: 4.5s;
   }
   @keyframes banner-animation {
     0% {
@@ -144,29 +196,23 @@ header {
 }
 // css para el contenido principal de Index
 .section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flex;
   padding: 10vh 0;
   background-color: #262a31;
   &__cont-textos {
-    text-align: left;
     width: 50vw;
     margin-bottom: 10vh;
+    animation-name: fadeInLeft;
+    animation-duration: 1.7s;
     h2 {
-      font-size: 2vw;
-      color: #ffaa00;
-      text-align: center;
+      @include h2;
     }
     p {
-      font-size: 1.5vw;
-      line-height: 3.5vw;
-      color: rgb(234 218 218);
+      @include parrafo;
     }
     img {
       width: 50vw;
-      height: 55vh;
+      height: 80vh;
       padding: 4vh 0;
       max-width: 100%;
     }
@@ -175,34 +221,39 @@ header {
 
 // css para fundamentos principales
 #main-fundamentos {
-  background-color: #262a31;
-
+  .banner-fundamentos {
+    @include banners;
+    background-image: url(/imgs/imagenes-fundamentos/banner-fundamentos.png);
+  }
   // css para el título de fundamentos
   .cont-titulo-fund {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 20vh;
+    @include cont-titulo-banner;
+    top: 35vh;
+    left: 5vw;
     &__titulo {
-      color: #ffaa00;
-      font-size: 3vw;
+      @include titulo-banner;
+      animation-name: lightSpeedInLeft;
+      animation-duration: 1.5s;
     }
   }
 
   // css para el contenido principal de fundamentos
   .section-fund {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    background-color: #262a31;
+    @include flex;
+
+    .cont-dropdowns {
+      display: flex;
+      div {
+        margin: 2vw;
+      }
+    }
+
     &__cont-texto {
       width: 50vw;
       padding: 7vh 0 0 0;
       p {
-        font-size: 1.5vw;
-        color: #ffffffea;
-        line-height: 3vw;
-        padding-bottom: 5vh;
+        @include parrafo;
         a {
           color: #ffaa00;
           font-size: 1.3vw;
@@ -212,21 +263,13 @@ header {
         }
       }
       h4 {
-        text-align: left;
-        color: #ffaa00;
-        font-size: 1.8vw;
-        padding-top: 3vh;
+        @include h4;
       }
       h3 {
-        text-align: left;
-        color: #ffaa00;
-        font-size: 2.2vw;
+        @include h3;
       }
       h2 {
-        font-size: 2.8vw;
-        color: #ffaa00;
-        text-align: center;
-        padding-bottom: 5vh;
+        @include h2;
       }
       img {
         padding: 3vh 0;
@@ -239,48 +282,38 @@ header {
 // css para Avanzado
 #main-avanzado {
   background-color: #262a31;
-  // css para el titulo de avanzado
-  .section1-avanzado {
-    &__cont-titulo {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding-top: 18vh;
-      h1 {
-        color: #ffaa00;
-        font-size: 3vw;
-      }
+  // css para el banner de avanzado
+  .banner-avanzado {
+    @include banners;
+    background-image: url(/imgs/imagenes-avanzado/banner-avanzado.png);
+  }
+  .cont-titulo-avanzado {
+    @include cont-titulo-banner;
+    top: 35vh;
+    &__titulo {
+      @include titulo-banner;
+      animation-name: lightSpeedInLeft;
+      animation-duration: 1.5s;
     }
   }
+
   // css para el contenido principal de avanzado
   .section2-avanzado {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex;
     &__cont-textos {
       width: 50vw;
       margin: 5vh 0;
       h2 {
-        color: #ffaa00;
-        font-size: 2.5vw;
-        padding: 1vw 0;
-        text-align: center;
+        @include h2;
       }
       h3 {
-        color: #ffaa00;
-        font-size: 2vw;
-        padding-top: 5vw;
-        text-align: center;
+        @include h3;
       }
       h4 {
-        color: #ffaa00;
-        font-size: 1.8vw;
-        padding-top: 5vw;
+        @include h4;
       }
       p {
-        color: #ffffff;
-        font-size: 1.5vw;
-        line-height: 3vw;
+        @include parrafo;
       }
       img {
         padding: 3vh 0;
@@ -293,32 +326,29 @@ header {
 // css para adcGuide
 #main-adc {
   background-color: #262a31;
-  .section-guiaAdc {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    &__cont-titulo {
-      padding-top: 18vh;
-      width: 40vw;
-      h1 {
-        font-size: 3vw;
-        color: #ffaa00;
-        text-align: center;
-      }
+  .banner-adc {
+    @include banners;
+    background-image: url(/imgs/imagenes-AdcGuide/banner-adc.png);
+  }
+  .cont-titulo-adc {
+    @include cont-titulo-banner;
+    top: 40vh;
+    left: 10vw;
+    &__titulo {
+      @include titulo-banner;
+      animation-name: lightSpeedInLeft;
+      animation-duration: 1.5s;
     }
+  }
+  .section-guiaAdc {
+    @include flex;
     &__cont-texto {
       width: 50vw;
       h2 {
-        font-size: 2.3vw;
-        color: #ffaa00;
-        padding-top: 7vh;
-        text-align: center;
+        @include h2;
       }
       h3 {
-        color: #ffaa00;
-        font-size: 2vw;
-        padding-top: 4vw;
+        @include h3;
       }
       p {
         text-align: left;
@@ -338,31 +368,44 @@ header {
 // css para conoceme
 #main-conoceme {
   background-color: #262a31;
+  .banner-conoceme {
+    @include banners;
+    background-image: url(/imgs/imagenes-conoceme/banner-conoceme.png);
+  }
+  .cont-titulo-conoceme {
+    @include cont-titulo-banner;
+    top: 45vh;
+    left: 15vw;
+    &__titulo {
+      @include titulo-banner;
+      animation-name: lightSpeedInLeft;
+      animation-duration: 1.5s;
+    }
+  }
   .section-conoceme {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flex;
     &__cont-texto {
       width: 55vw;
       padding-top: 15vh;
-      h3 {
-        font-size: 2vw;
-        color: #ffaa00;
+      .slide {
+        padding-bottom: 3vh;
+      }
+      .slide img {
+        height: 80vh;
+        width: 70vw;
+      }
+      .titulo-carrusel {
+        font-size: 4vw;
         text-align: center;
+      }
+      h3 {
+        @include h3;
       }
       h2 {
-        font-size: 2.5vw;
-        color: #ffaa00;
-        text-align: center;
-        padding-top: 8vh;
+        @include h2;
       }
       p {
-        text-align: left;
-        color: #ffffff;
-        font-size: 1.5vw;
-        line-height: 3vw;
-        padding-bottom: 10vh;
+        @include parrafo;
       }
       .opgg {
         color: #ffaa00;
@@ -424,12 +467,6 @@ header {
   }
   // css responsive para el footer
   .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #201f1f;
-
     // css para las redes sociales
     .cont-redes {
       &__titulo {
@@ -447,7 +484,6 @@ header {
         }
       }
     }
-
     // css para los derechos de autor
     .cont-derechos {
       &__texto {
@@ -468,7 +504,7 @@ header {
       width: 70vw;
       margin-bottom: 0;
       h2 {
-        font-size: 16px;
+        font-size: 18px;
         color: #ffaa00;
         text-align: center;
         padding-top: 10vh;
@@ -488,21 +524,16 @@ header {
   // css responsive para fundamentos principales
 
   #main-fundamentos {
-    // css responsive para el título de fundamentos
-    .cont-titulo-fund {
-      padding-top: 20vh;
-      &__titulo {
-        font-size: 20px;
-      }
+    .banner-fundamentos {
+      height: 80vh;
     }
-
     // css responsive para el contenido principal de fundamentos
     .section-fund {
       &__cont-texto {
         width: 70vw;
         padding: 7vh 0 0 0;
         p {
-          font-size: 13px;
+          font-size: 14px;
           line-height: 35px;
           padding-bottom: 5vh;
           a {
@@ -515,10 +546,10 @@ header {
           padding-top: 3vh;
         }
         h3 {
-          font-size: 14px;
+          font-size: 16px;
         }
         h2 {
-          font-size: 17px;
+          font-size: 18px;
           padding-bottom: 5vh;
         }
         img {
@@ -529,14 +560,15 @@ header {
     }
   }
 
+  // css responsive para avanzado
   #main-avanzado {
+    .banner-avanzado {
+      height: 80vh;
+    }
     // css para el titulo de avanzado
     .section1-avanzado {
       &__cont-titulo {
         padding-top: 20vh;
-        h1 {
-          font-size: 19px;
-        }
       }
     }
 
@@ -546,12 +578,16 @@ header {
         width: 70vw;
         margin: 5vh 0;
         h2 {
-          font-size: 17px;
+          font-size: 18px;
           padding: 2vh 0;
         }
         h3 {
-          font-size: 15px;
+          font-size: 16px;
           padding-top: 5vw;
+        }
+        h4 {
+          font-size: 14px;
+          padding-top: 3vh;
         }
         p {
           font-size: 14px;
@@ -561,6 +597,89 @@ header {
           padding: 3vh 0;
           width: 70vw;
         }
+      }
+    }
+  }
+
+  // css para adcGuide
+  #main-adc {
+    .banner-adc {
+      height: 80vh;
+    }
+    .section-guiaAdc {
+      &__cont-titulo {
+        width: 60vw;
+      }
+      &__cont-texto {
+        width: 70vw;
+        h2 {
+          font-size: 18px;
+          padding-top: 4vw;
+        }
+        h3 {
+          font-size: 16px;
+          padding-top: 4vw;
+        }
+        p {
+          font-size: 14px;
+          padding: 2vw 0;
+          line-height: 35px;
+        }
+        img {
+          padding: 3vh 0;
+          width: 70vw;
+        }
+      }
+    }
+  }
+
+  // css responsive para conoceme
+  #main-conoceme {
+    .banner-conoceme {
+      height: 80vh;
+    }
+    .cont-titulo-conoceme {
+      top: 40vh;
+    }
+    .section-conoceme {
+      &__cont-texto {
+        width: 70vw;
+        padding-top: 15vh;
+        .slide {
+          padding-bottom: 10vh;
+        }
+        .slide img {
+          height: 40vh;
+          width: 80vw;
+        }
+        .titulo-carrusel {
+          font-size: 25px;
+          text-align: center;
+        }
+        h3 {
+          font-size: 16px;
+        }
+        h2 {
+          font-size: 18px;
+        }
+        p {
+          font-size: 16px;
+          line-height: 35px;
+        }
+        .opgg {
+          color: #ffaa00;
+        }
+        ul {
+          padding-bottom: 0;
+        }
+        li {
+          padding: 5vh 5vw;
+        }
+      }
+      &__icono {
+        color: white;
+        font-size: 15vw;
+        text-decoration: none;
       }
     }
   }
