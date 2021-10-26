@@ -166,7 +166,7 @@ header .nav-menu .fondo-menu div .link:hover {
   background-size: cover;
   filter: brightness(0.6);
   background-attachment: fixed;
-  background-image: url(/imgs/imagenes-fundamentos/banner-fundamentos.png);
+  background-image: url(../imgs/imagenes-fundamentos/banner-fundamentos.png);
 }
 #main-fundamentos .cont-titulo-fund {
   position: absolute;
@@ -178,7 +178,7 @@ header .nav-menu .fondo-menu div .link:hover {
   color: #ffffff;
   text-transform: uppercase;
   font-size: 9vw;
-  animation-name: lightSpeedInLeft;
+  animation-name: backInDown;
   animation-duration: 1.5s;
 }
 #main-fundamentos .section-fund {
@@ -251,7 +251,7 @@ header .nav-menu .fondo-menu div .link:hover {
   background-size: cover;
   filter: brightness(0.6);
   background-attachment: fixed;
-  background-image: url(/imgs/imagenes-avanzado/banner-avanzado.png);
+  background-image: url(../imgs/imagenes-avanzado/banner-avanzado.png);
 }
 #main-avanzado .cont-titulo-avanzado {
   position: absolute;
@@ -262,7 +262,7 @@ header .nav-menu .fondo-menu div .link:hover {
   color: #ffffff;
   text-transform: uppercase;
   font-size: 9vw;
-  animation-name: lightSpeedInLeft;
+  animation-name: backInDown;
   animation-duration: 1.5s;
 }
 #main-avanzado .section2-avanzado {
@@ -321,7 +321,7 @@ header .nav-menu .fondo-menu div .link:hover {
   background-size: cover;
   filter: brightness(0.6);
   background-attachment: fixed;
-  background-image: url(/imgs/imagenes-AdcGuide/banner-adc.png);
+  background-image: url(../imgs/imagenes-AdcGuide/banner-adc.png);
 }
 #main-adc .cont-titulo-adc {
   position: absolute;
@@ -333,7 +333,7 @@ header .nav-menu .fondo-menu div .link:hover {
   color: #ffffff;
   text-transform: uppercase;
   font-size: 9vw;
-  animation-name: lightSpeedInLeft;
+  animation-name: backInDown;
   animation-duration: 1.5s;
 }
 #main-adc .section-guiaAdc {
@@ -384,7 +384,7 @@ header .nav-menu .fondo-menu div .link:hover {
   background-size: cover;
   filter: brightness(0.6);
   background-attachment: fixed;
-  background-image: url(/imgs/imagenes-conoceme/banner-conoceme.png);
+  background-image: url(../imgs/imagenes-conoceme/banner-conoceme.png);
 }
 #main-conoceme .cont-titulo-conoceme {
   position: absolute;
@@ -396,7 +396,7 @@ header .nav-menu .fondo-menu div .link:hover {
   color: #ffffff;
   text-transform: uppercase;
   font-size: 9vw;
-  animation-name: lightSpeedInLeft;
+  animation-name: backInDown;
   animation-duration: 1.5s;
 }
 #main-conoceme .section-conoceme {

@@ -223,7 +223,7 @@ header {
 #main-fundamentos {
   .banner-fundamentos {
     @include banners;
-    background-image: url(/imgs/imagenes-fundamentos/banner-fundamentos.png);
+    background-image: url(../imgs/imagenes-fundamentos/banner-fundamentos.png);
   }
   // css para el título de fundamentos
   .cont-titulo-fund {
@@ -232,7 +232,7 @@ header {
     left: 5vw;
     &__titulo {
       @include titulo-banner;
-      animation-name: lightSpeedInLeft;
+      animation-name: backInDown;
       animation-duration: 1.5s;
     }
   }
@@ -285,14 +285,14 @@ header {
   // css para el banner de avanzado
   .banner-avanzado {
     @include banners;
-    background-image: url(/imgs/imagenes-avanzado/banner-avanzado.png);
+    background-image: url(../imgs/imagenes-avanzado/banner-avanzado.png);
   }
   .cont-titulo-avanzado {
     @include cont-titulo-banner;
     top: 35vh;
     &__titulo {
       @include titulo-banner;
-      animation-name: lightSpeedInLeft;
+      animation-name: backInDown;
       animation-duration: 1.5s;
     }
   }
@@ -328,7 +328,7 @@ header {
   background-color: #262a31;
   .banner-adc {
     @include banners;
-    background-image: url(/imgs/imagenes-AdcGuide/banner-adc.png);
+    background-image: url(../imgs/imagenes-AdcGuide/banner-adc.png);
   }
   .cont-titulo-adc {
     @include cont-titulo-banner;
@@ -336,7 +336,7 @@ header {
     left: 10vw;
     &__titulo {
       @include titulo-banner;
-      animation-name: lightSpeedInLeft;
+      animation-name: backInDown;
       animation-duration: 1.5s;
     }
   }
@@ -370,7 +370,7 @@ header {
   background-color: #262a31;
   .banner-conoceme {
     @include banners;
-    background-image: url(/imgs/imagenes-conoceme/banner-conoceme.png);
+    background-image: url(../imgs/imagenes-conoceme/banner-conoceme.png);
   }
   .cont-titulo-conoceme {
     @include cont-titulo-banner;
@@ -378,7 +378,7 @@ header {
     left: 15vw;
     &__titulo {
       @include titulo-banner;
-      animation-name: lightSpeedInLeft;
+      animation-name: backInDown;
       animation-duration: 1.5s;
     }
   }
