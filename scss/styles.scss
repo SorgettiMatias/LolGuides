@@ -3,6 +3,22 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Kaisei HarunoUmi", serif;
+  scroll-behavior: smooth;
+}
+
+.btn-up i {
+  color: #ffaa00;
+  background: black;
+  font-size: 5rem;
+  padding: 0rem;
+  border-radius: 160rem;
+}
+
+.btn-up {
+  position: fixed;
+  bottom: 5vh;
+  right: 5vw;
+  z-index: 10000;
 }
 
 // mixins para los banners
@@ -410,14 +426,13 @@ header {
       .opgg {
         color: #ffaa00;
       }
-      ul {
+      .cont-ul-conoceme {
         display: flex;
-        justify-content: center;
         align-items: center;
-        padding-bottom: 15vh;
+        justify-content: center;
       }
-      li {
-        padding: 5vh 5vw;
+      ul {
+        margin: 5vw;
       }
     }
     &__icono {

@@ -96,18 +96,25 @@
             </h1>
         </div>
 
+        <!-- boton ir arriba -->
+        <a href="#menu" class="btn-up">
+            <i class="fas fa-arrow-circle-up"></i>
+        </a>
+        
+
         <section class="section-fund">
-            <div class="cont-dropdowns">
+            <div id="menu" class="cont-dropdowns">
                 <div class="dropdown">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         Roles y carriles
                     </button>
                     <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-                        <li><a class="dropdown-item" href="#">Top Lane</a></li>
-                        <li><a class="dropdown-item" href="#">Mid Lane</a></li>
-                        <li><a class="dropdown-item" href="#">Bot Lane</a></li>
-                        <li><a class="dropdown-item" href="#">Jungla</a></li>
+                        <li><a class="dropdown-item" href="#roles-carriles">Roles y carriles</a></li>
+                        <li><a class="dropdown-item" href="#top-lane">Top Lane</a></li>
+                        <li><a class="dropdown-item" href="#mid-lane">Mid Lane</a></li>
+                        <li><a class="dropdown-item" href="#bot-lane">Bot Lane</a></li>
+                        <li><a class="dropdown-item" href="#jungla">Jungla</a></li>
                     </ul>
                 </div>
                 <div class="dropdown">
@@ -116,10 +123,10 @@
                         Monstruos epicos
                     </button>
                     <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-                        <li><a class="dropdown-item" href="#">Dragones Elementales</a></li>
-                        <li><a class="dropdown-item" href="#">Heraldo</a></li>
-                        <li><a class="dropdown-item" href="#">Dragon Ancestral</a></li>
-                        <li><a class="dropdown-item" href="#">Baron Nashor</a></li>
+                        <li><a class="dropdown-item" href="#dg-elemental">Dragones Elementales</a></li>
+                        <li><a class="dropdown-item" href="#heraldo">Heraldo</a></li>
+                        <li><a class="dropdown-item" href="#dg-ancestral">Dragon Ancestral</a></li>
+                        <li><a class="dropdown-item" href="#baron">Baron Nashor</a></li>
                     </ul>
                 </div>
                 <div class="dropdown">
@@ -128,9 +135,9 @@
                         Oro y experiencia
                     </button>
                     <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-                        <li><a class="dropdown-item" href="#">¿Qué es el oro?</a></li>
-                        <li><a class="dropdown-item" href="#">Experiencia y nivel</a></li>
-                        <li><a class="dropdown-item" href="#">Súbditos</a></li>
+                        <li><a class="dropdown-item" href="#oro">¿Qué es el oro?</a></li>
+                        <li><a class="dropdown-item" href="#exp-nivel">Experiencia y nivel</a></li>
+                        <li><a class="dropdown-item" href="#minions">Súbditos</a></li>
                     </ul>
                 </div>
                 <div class="dropdown">
@@ -139,13 +146,15 @@
                         Estructuras
                     </button>
                     <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-                        <li><a class="dropdown-item" href="#">Torretas</a></li>
-                        <li><a class="dropdown-item" href="#">Inhibidores</a></li>
-                        <li><a class="dropdown-item" href="#">Nexo</a></li>
-                        <li><a class="dropdown-item" href="#">Fuente</a></li>
+                        <li><a class="dropdown-item" href="#torres">Torretas</a></li>
+                        <li><a class="dropdown-item" href="#inhi">Inhibidores</a></li>
+                        <li><a class="dropdown-item" href="#nexo">Nexo</a></li>
+                        <li><a class="dropdown-item" href="#fuente">Fuente</a></li>
                     </ul>
                 </div>
             </div>
+                 
+  
 
             <!-- este es el div que contiene todo lo relacionado al mapa -->
             <div class="section-fund__cont-texto">
@@ -161,7 +170,7 @@
                         los monstruos neutrales.
                     </p>
                 </div>
-                <div class="wow animate__animated animate__fadeInRightBig">
+                <div id="roles-carriles" class="wow animate__animated animate__fadeInRightBig">
                     <h2>Roles y carriles</h2>
                     <p>
                         Lo que voy a explicar a continuación es por regla general, es decir, siempre pueden haber
@@ -174,7 +183,7 @@
                 </div>
 
                 <div>
-                    <div class="wow animate__animated animate__fadeInLeftBig">
+                    <div id="top-lane" class="wow animate__animated animate__fadeInLeftBig">
                         <h3>Top lane</h3>
                         <p>
                             La top lane es el carril que se encuentra en la parte superior del mapa, cerca de los
@@ -215,7 +224,7 @@
                 </div>
 
                 <div>
-                    <div class="wow animate__animated animate__fadeInRightBig">
+                    <div id="mid-lane" class="wow animate__animated animate__fadeInRightBig">
                         <h3>Mid lane</h3>
                         <p>
                             La mid lane se encuentra a la mitad del mapa, es la línea más corta, y a este carril suelen
@@ -274,7 +283,7 @@
                 </div>
 
                 <div>
-                    <div class="wow animate__animated animate__fadeInRightBig">
+                    <div id="bot-lane" class="wow animate__animated animate__fadeInRightBig">
                         <h3>Bot lane</h3>
                         <p>
                             La bot lane es el carril inferior del mapa. Este es el único carril del juego donde cada
@@ -356,7 +365,7 @@
                     </div>
                 </div>
 
-                <div class="wow animate__animated animate__fadeInRightBig">
+                <div id="jungla" class="wow animate__animated animate__fadeInRightBig">
                     <h3>Jungla</h3>
                     <img src="./imgs/imagenes-fundamentos/mapa y roles/jungle.png" alt="contiene el icono de la jungla">
                     <p>
@@ -473,7 +482,7 @@
                     </p>
                 </div>
 
-                <div class="wow animate__animated animate__fadeInRightBig">
+                <div id="dg-elemental" class="wow animate__animated animate__fadeInRightBig">
                     <h3>Dragones elementales:</h3>
                     <p>
                         Los dragones se encuentran en la parte inferior del mapa, en el río, y respawnean cada 5 minutos
@@ -549,7 +558,7 @@
                     </p>
                 </div>
 
-                <div class="wow animate__animated animate__fadeInLeftBig">
+                <div id="heraldo" class="wow animate__animated animate__fadeInLeftBig">
                     <h3>Heraldos de la grieta</h3>
                     <img src="./imgs/imagenes-fundamentos/mapa y roles/herald.png"
                         alt="monstruo corrompido, es el heraldo">
@@ -571,7 +580,7 @@
                     </p>
                 </div>
 
-                <div class="wow animate__animated animate__fadeInRightBig">
+                <div id="dg-ancestral" class="wow animate__animated animate__fadeInRightBig">
                     <h3>Dragón Ancestral</h3>
                     <img src="./imgs/imagenes-fundamentos/mapa y roles/anciant-drake.png"
                         alt="dragón blanco gigante, es el elder dragon">
@@ -589,7 +598,7 @@
                     </p>
                 </div>
 
-                <div class="wow animate__animated animate__fadeInLeftBig">
+                <div id="baron" class="wow animate__animated animate__fadeInLeftBig">
                     <h3>Baron Nashor</h3>
                     <img src="./imgs/imagenes-fundamentos/mapa y roles/baron-nashor.png"
                         alt="Monstruo gigante con tentáculos, de color violeta, es el Baron Nashor">
@@ -613,7 +622,7 @@
             <div class="section-fund__cont-texto">
                 <h2 class="wow animate__animated animate__fadeInRightBig">oro y experiencia</h2>
 
-                <div class="wow animate__animated animate__fadeInLeftBig">
+                <div id="oro" class="wow animate__animated animate__fadeInLeftBig">
                     <h3>¿Qué es el oro y para que sirve?</h3>
                     <p>
                         El oro es la moneda que se usa dentro del juego y se utiliza para comprar objetos en la
@@ -630,7 +639,7 @@
                     </p>
                 </div>
 
-                <div class="wow animate__animated animate__fadeInRightBig">
+                <div id="exp-nivel" class="wow animate__animated animate__fadeInRightBig">
                     <h3>¿Qué son la experiencia y el nivel?</h3>
                     <p>
                         La experiencia es la manera que tienen los campeones para poder subir de nivel.
@@ -647,8 +656,7 @@
                 </div>
 
                 <div>
-
-                    <div class="wow animate__animated animate__fadeInLeftBig">
+                    <div id="minions" class="wow animate__animated animate__fadeInLeftBig">
                         <h3>Súbditos</h3>
                         <img src="./imgs/imagenes-fundamentos/minions/oleada.jpg"
                             alt="fila de 7 súbditos, 3 guerreros, 3 magos y un cannon">
@@ -708,7 +716,7 @@
 
                 <h2 class="wow animate__animated animate__fadeInRightBig">Estructuras</h2>
 
-                <div class="wow animate__animated animate__fadeInLeftBig">
+                <div id="torres" class="wow animate__animated animate__fadeInLeftBig">
                     <h3>Torretas</h3>
                     <img
                         src="./imgs/imagenes-fundamentos/estructuras/Torres 1.png"
@@ -727,7 +735,7 @@
                     </p>
                 </div>
 
-                <div class="wow animate__animated animate__fadeInRightBig">
+                <div id="inhi" class="wow animate__animated animate__fadeInRightBig">
                     <h3>Inhibidores</h3>
                     <img
                         src="./imgs/imagenes-fundamentos/estructuras/inhibidor 1.png"
@@ -747,12 +755,12 @@
                     </p>
                 </div>
 
-                <div class="wow animate__animated animate__fadeInLeftBig">
+                <div id="nexo" class="wow animate__animated animate__fadeInLeftBig">
                     <h3>Nexo</h3>
                     <img
                         src="./imgs/imagenes-fundamentos/estructuras/Nexo 1.png" alt="Estructura redonda gigante">
                     <p>
-                        El Nexo es el objetivo más importante dentro de cada partida, para que un equipo gane,
+                        El Nexo es el objetivo más importante dentro de cada partida. Para que un equipo gane,
                         uno de los dos nexos tiene que ser destruido. Se encuentra dentro de la base y todo aquello
                         que
                         hagamos en la partida
@@ -760,7 +768,7 @@
                     </p>
                 </div>
 
-                <div class="wow animate__animated animate__fadeInRightBig">
+                <div id="fuente" class="wow animate__animated animate__fadeInRightBig">
                     <h3>Fuente</h3>
                     <img
                         src="./imgs/imagenes-fundamentos/estructuras/fuente 1.png" alt="contiene la fuente">
@@ -770,8 +778,8 @@
                         jugador
                         luego de revivir. Además uno puede aparecer en la fuente apretando la tecla "b" y esperando
                         que
-                        se termine el casteo que dura 7 segundos
-                        y solo se puede comprar objetos en la tienda cuando uno está dentro de la fuente.
+                        se termine el casteo que dura 7 segundos. 
+                        Solo se pueden comprar objetos en la tienda cuando uno está dentro de la fuente.
                     </p>
                 </div>
             </div>
