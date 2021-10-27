@@ -6,6 +6,32 @@
   scroll-behavior: smooth;
 }
 
+.cont-error {
+  text-align: center;
+  margin-top: 10vh;
+}
+.cont-error h1 {
+  font-size: 3vw;
+  text-transform: uppercase;
+}
+.cont-error p {
+  font-size: 2vw;
+  font-weight: 100;
+  margin-bottom: 5vh;
+}
+.cont-error .btn-error {
+  background-color: #ffaa00;
+  padding: 1vw 1.5vw;
+  border-radius: 0.5vw;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #161515;
+}
+
+.teemo {
+  width: 15%;
+}
+
 .btn-up i {
   color: #ffaa00;
   background: black;
