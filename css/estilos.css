@@ -144,7 +144,7 @@ header .nav-menu .fondo-menu div .link:hover {
   text-align: center;
   top: 35vh;
   left: 15vw;
-  animation-name: zoomInDown;
+  animation-name: backInDown;
   animation-duration: 1s;
 }
 .cont-titulo-banner__titulo {
@@ -174,8 +174,6 @@ header .nav-menu .fondo-menu div .link:hover {
 .section__cont-textos {
   width: 50vw;
   margin-bottom: 10vh;
-  animation-name: fadeInLeft;
-  animation-duration: 1.7s;
 }
 .section__cont-textos h2 {
   font-size: 2.5w;
