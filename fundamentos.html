@@ -88,7 +88,7 @@
 
     <!-- cuerpo principal -->
     <main id="main-fundamentos">
-        <div class="banner-fundamentos">
+        <div id="banner" class="banner-fundamentos">
         </div>
         <div class="cont-titulo-fund">
             <h1 class="cont-titulo-fund__titulo animate__animated animate__backInDown">
@@ -97,19 +97,21 @@
         </div>
 
         <!-- boton ir arriba -->
-        <a href="#menu" class="btn-up">
+        <a href="#banner" class="btn-up">
             <i class="fas fa-arrow-circle-up"></i>
         </a>
         
-
-        <section class="section-fund">
+        <!-- contenido principal -->
+        <section class="section-fund">           
+            <!-- dropdowns  -->
             <div id="menu" class="cont-dropdowns">
+
                 <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
+                    <button class="btn dropdown-toggle boton-dropdown" type="button" id="dropdownMenuButton2"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         Roles y carriles
                     </button>
-                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                    <ul class="dropdown-menu dropdown-menu-dark lista-dropdown" aria-labelledby="dropdownMenuButton2">
                         <li><a class="dropdown-item" href="#roles-carriles">Roles y carriles</a></li>
                         <li><a class="dropdown-item" href="#top-lane">Top Lane</a></li>
                         <li><a class="dropdown-item" href="#mid-lane">Mid Lane</a></li>
@@ -117,35 +119,38 @@
                         <li><a class="dropdown-item" href="#jungla">Jungla</a></li>
                     </ul>
                 </div>
+
                 <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
+                    <button class="btn dropdown-toggle boton-dropdown" type="button" id="dropdownMenuButton2"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         Monstruos epicos
                     </button>
-                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                    <ul class="dropdown-menu dropdown-menu-dark lista-dropdown" aria-labelledby="dropdownMenuButton2">
                         <li><a class="dropdown-item" href="#dg-elemental">Dragones Elementales</a></li>
                         <li><a class="dropdown-item" href="#heraldo">Heraldo</a></li>
                         <li><a class="dropdown-item" href="#dg-ancestral">Dragon Ancestral</a></li>
                         <li><a class="dropdown-item" href="#baron">Baron Nashor</a></li>
                     </ul>
                 </div>
+
                 <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
+                    <button class="btn dropdown-toggle boton-dropdown" type="button" id="dropdownMenuButton2"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         Oro y experiencia
                     </button>
-                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                    <ul class="dropdown-menu dropdown-menu-dark lista-dropdown" aria-labelledby="dropdownMenuButton2">
                         <li><a class="dropdown-item" href="#oro">¿Qué es el oro?</a></li>
                         <li><a class="dropdown-item" href="#exp-nivel">Experiencia y nivel</a></li>
                         <li><a class="dropdown-item" href="#minions">Súbditos</a></li>
                     </ul>
                 </div>
+                
                 <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
+                    <button class="btn dropdown-toggle boton-dropdown" type="button" id="dropdownMenuButton2"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         Estructuras
                     </button>
-                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                    <ul class="dropdown-menu dropdown-menu-dark lista-dropdown" aria-labelledby="dropdownMenuButton2">
                         <li><a class="dropdown-item" href="#torres">Torretas</a></li>
                         <li><a class="dropdown-item" href="#inhi">Inhibidores</a></li>
                         <li><a class="dropdown-item" href="#nexo">Nexo</a></li>

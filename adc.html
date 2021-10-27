@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- SEO -->
-    
+
     <!-- Descripción del sitio -->
     <meta name="description"
         content="En este apartado voy a estar hablando específicamente de que es lo que debe hacer el adc.">
-    
+
     <!-- Palabras clave -->
     <meta name="keywords"
         content="lolguides , league of legends , adc , guía , micro , macro , kiteo , tradeos , objetos, runas , Triangulación ,">
-    
+
     <!-- Tipo de letra y fontawesome -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,11 +24,11 @@
 
     <!-- animaciones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    
+
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    
+
     <!-- Link a mi css -->
     <link rel="stylesheet" href="css/estilos.css">
 
@@ -88,123 +88,204 @@
 
     <!-- cuerpo principal -->
     <main id="main-adc">
-        <div class="banner-adc">
+        <!-- banner -->
+        <div id="banner" class="banner-adc">
         </div>
         <div class="cont-titulo-adc">
             <h1 class="cont-titulo-adc__titulo animate__animated animate__backInDown">adcarry guide</h1>
         </div>
+
+        <!-- boton ir arriba -->
+        <a href="#banner" class="btn-up">
+            <i class="fas fa-arrow-circle-up"></i>
+        </a>
+
         <section class="section-guiaAdc">
+            <!-- dropdowns de bootstrap  -->
+            <div id="menu" class="cont-dropdowns">
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle boton-dropdown" type="button" id="dropdownMenuButton2"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Kiteo
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark lista-dropdown" aria-labelledby="dropdownMenuButton2">
+                        <li><a class="dropdown-item" href="#kiteo-definicion">Definición</a></li>
+                        <li><a class="dropdown-item" href="#kiteo-utilidad">Utilidad</a></li>
+                        <li><a class="dropdown-item" href="#kiteo-config">Configuración</a></li>
+                        <li><a class="dropdown-item" href="#practicar-kiteo">Práctica</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle boton-dropdown" type="button" id="dropdownMenuButton2"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Tipos de adc
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark lista-dropdown" aria-labelledby="dropdownMenuButton2">
+                        <li><a class="dropdown-item" href="#adc-utilidad">Utilidad</a></li>
+                        <li><a class="dropdown-item" href="#adc-hipercarry">Hipercarrys</a></li>
+                        <li><a class="dropdown-item" href="#adc-caster">Casters</a></li>
+                        <li><a class="dropdown-item" href="#adc-asedio">Asedio</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle boton-dropdown" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Micro game
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark lista-dropdown" aria-labelledby="dropdownMenuButton2">
+                        <li><a class="dropdown-item" href="#posicionamiento">Posicionamiento</a></li>
+                        <li><a class="dropdown-item" href="#triangulacion">Triangulación</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle boton-dropdown" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Macro game
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark lista-dropdown" aria-labelledby="dropdownMenuButton2">
+                        <li><a class="dropdown-item" href="#itemizacion">Itemización</a></li>
+                        <li><a class="dropdown-item" href="#wardeo">Wardeo</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!-- contenido principal -->
             <div class="section-guiaAdc__cont-texto">
-                <h2 class="wow animate__animated animate__fadeInLeftBig">Kiteo</h2>
-                <img class="wow animate__animated animate__fadeInLeftBig" src="./imgs/imagenes-AdcGuide/kiteo.png" alt="background de dos campeones y encima un texto que dice guía de kiteo">
-                <h3 class="wow animate__animated animate__fadeInLeftBig">¿Qué es el kiteo?</h3>
-                <p class="wow animate__animated animate__fadeInLeftBig">
-                    El kiteo es aprovechar el tiempo de recarga del auto ataque de tu campeon para moverte, ya que en
-                    ese lapso no puedes hacer daño.
-                </p>
-                <h3 class="wow animate__animated animate__fadeInLeftBig">¿Para qué sirve?</h3>
-                <p class="wow animate__animated animate__fadeInLeftBig">
-                    Sirve para que sea más dificil que el enemigo logre alcanzarte, ya sea con ataques básicos (si es
-                    melee) o con habilidades.
-                    Saber kitear o no puede ser la diferencia entre ser un buen adc o uno pésimo, ya que si no sabes
-                    kitear es muy dificil que puedas
-                    posicionarte bien a la hora de tradear o en las teamfights.
-                </p>
-                <h3 class="wow animate__animated animate__fadeInLeftBig">Configuración de kiteo</h3>
-                <p class="wow animate__animated animate__fadeInLeftBig">
-                    En el siguiente video voy a mostrar como configurar las teclas para poder kitear de la manera más
-                    óptima.
-                </p>
-                <h3 class="wow animate__animated animate__fadeInLeftBig">Practicar el kiteo</h3>
-                <p class="wow animate__animated animate__fadeInLeftBig">
-                    En el siguiente video voy a mostrar como practicar el kiteo, para que puedas llevarlo a tus
-                    partidas.
-                </p>
+                <div class="wow animate__animated animate__fadeInLeftBig">
+                    <h2>Kiteo</h2>
+                    <img src="./imgs/imagenes-AdcGuide/kiteo.png"
+                        alt="background de dos campeones y encima un texto que dice guía de kiteo">
+
+                    <h3 id="kiteo-definicion">¿Qué es el kiteo?</h3>
+                    <p>
+                        El kiteo es aprovechar el tiempo de recarga del auto ataque de tu campeon para moverte, ya que en
+                        ese lapso no puedes hacer daño.
+                    </p>
+                </div>
+
+                <div class="wow animate__animated animate__fadeInRightBig">
+                    <h3 id="kiteo-utilidad">¿Para qué sirve?</h3>
+                    <p>
+                        Sirve para que sea más dificil que el enemigo logre alcanzarte, ya sea con ataques básicos (si es
+                        melee) o con habilidades.
+                        Saber kitear o no puede ser la diferencia entre ser un buen adc o uno pésimo, ya que si no sabes
+                        kitear es muy dificil que puedas
+                        posicionarte bien a la hora de tradear o en las teamfights.
+                    </p>
+                </div>
+
+                <div class="wow animate__animated animate__fadeInLeftBig">
+                    <h3 id="kiteo-config">Configuración de kiteo</h3>
+                    <p>
+                        En el siguiente video voy a mostrar como configurar las teclas para poder kitear de la manera más
+                        óptima.
+                    </p>
+                </div>
+
+                <div class="wow animate__animated animate__fadeInRightBig">
+                    <h3 id="practicar-kiteo">Practicar el kiteo</h3>
+                    <p>
+                        En el siguiente video voy a mostrar como practicar el kiteo, para que puedas llevarlo a tus
+                        partidas.
+                    </p>
+                </div>
             </div>
 
             <div class="section-guiaAdc__cont-texto">
-                <h2 class="wow animate__animated animate__fadeInLeftBig">Tipos de adc</h2>
-                <img class="wow animate__animated animate__fadeInLeftBig" src="./imgs/imagenes-AdcGuide/tipos-de-Adc.png" alt="background de dos campeones y encima un texto que dice diferentes tipos de adc">
-                <p class="wow animate__animated animate__fadeInLeftBig">
-                    Para poder jugar correctamente adc, primero hay que saber cual va a ser tu rol dentro de la partida,
-                    y eso depende mucho de que clase de tirador estes jugando.
-                </p>
-                <h3 class="wow animate__animated animate__fadeInLeftBig">Utilidad</h3>
-                <p class="wow animate__animated animate__fadeInLeftBig">
-                    La función de este tipo de adc es ser útiles para el equipo, como indica su nombre, ya que tienen
-                    habilidades que les permiten iniciar una pelea facilmente,
-                    hacer disengage de una pelea o simplemente pueden buffear al team con curaciones y escudos. Suelen
-                    pickearse cuando el equipo tiene daño suficiente para las peleas en equipo, pero no tiene utilidad.
-                    Los siguientes campeones son adc de utilidad:
-                </p>
-                <h3 class="wow animate__animated animate__fadeInLeftBig">Hipercarrys</h3>
-                <p class="wow animate__animated animate__fadeInLeftBig">
-                    Este tipo de adc suele brillar en el juego tardio y si se feedean pueden carrear la partida solos,
-                    pero en el juego temprano suelen sufrir mucho, por lo que necesitan de soportes que puedan
-                    hacerle peel, para que puedan escalar. Los siguientes campeones son adc hipercarrys:
-                </p>
-                <h3 class="wow animate__animated animate__fadeInLeftBig">adc casters</h3>
-                <p class="wow animate__animated animate__fadeInLeftBig">
-                    Este tipo de adc dependen principalmente de sus habilidades para meter la mayor cantidad de daño,
-                    por lo general son skill shots.
-                    Esto no quiere decir que no tengan que usar sus ataques básicos, todo lo contrario. Los siguientes
-                    campeones son adc casters:
-                </p>
-                <h3 class="wow animate__animated animate__fadeInLeftBig">adc de asedio</h3>
-                <p class="wow animate__animated animate__fadeInLeftBig">
-                    Este tipo de adc son campeones que tienen muchisima limpieza de oleadas y usan sus ataques basicos
-                    y/o habilidades para desgastar al enemigo, para que este no pueda pelear.
-                    Los siguientes campeones son adc de asedio:
-                </p>
-                
-                <h3 class="wow animate__animated animate__fadeInLeftBig">Adc de early/mid game</h3>
-                <p class="wow animate__animated animate__fadeInLeftBig">
-                    Estos campeones suelen ser muy agresivos en la fase de lineas y si salen bien en ella su mid game es
-                    muy fuerte, pero si les va mal en el early
-                    no van a poder hacer nada en toda la partida. Por eso deben intentar cerrar el juego lo más rápido
-                    posible.
-                    Los siguientes campeones son adc de early/mid game:
-                </p>
-                <h3 class="wow animate__animated animate__fadeInLeftBig">Adc de mid/late game</h3>
-                <p class="wow animate__animated animate__fadeInLeftBig">
-                    Estos campeones requieren de farmear todo lo posible en la fase de lineas e intentar sobrevivir. Si
-                    conseguiste tener una buena fase de lineas vas a ser
-                    imparable. Los siguientes campeones son adc de mid/late game:
-                </p>
-                <h3 class="wow animate__animated animate__fadeInLeftBig">Adc buenos en todas las etapas</h3>
-                <p class="wow animate__animated animate__fadeInLeftBig">
-                    Los siguientes campeones son adc buenos en todas las fases del juego:
-                </p>
+                <div class="wow animate__animated animate__fadeInLeftBig">
+                    <h2>Tipos de adc</h2>
+                    <img
+                        src="./imgs/imagenes-AdcGuide/tipos-de-Adc.png"
+                        alt="background de dos campeones y encima un texto que dice diferentes tipos de adc">
+                    <p>
+                        Para poder jugar correctamente adc, primero hay que saber cual va a ser tu rol dentro de la partida,
+                        y eso depende mucho de que clase de tirador estes jugando.
+                    </p>
+                </div>
+
+                <div class="wow animate__animated animate__fadeInRightBig">
+                    <h3 id="adc-utilidad">Utilidad</h3>
+                    <p>
+                        La función de este tipo de adc es ser útiles para el equipo, como indica su nombre, ya que tienen
+                        habilidades que les permiten iniciar una pelea facilmente,
+                        hacer disengage de una pelea o simplemente pueden buffear al team con curaciones y escudos. Suelen
+                        pickearse cuando el equipo tiene daño suficiente para las peleas en equipo, pero no tiene utilidad.
+                        Los siguientes campeones son adc de utilidad:
+                    </p>
+                </div>
+
+                <div class="wow animate__animated animate__fadeInLeftBig">
+                    <h3 id="adc-hipercarry">Hipercarrys</h3>
+                    <p>
+                        Este tipo de adc suele brillar en el juego tardio y si se feedean pueden carrear la partida solos,
+                        pero en el juego temprano suelen sufrir mucho, por lo que necesitan de soportes que puedan
+                        hacerle peel, para que puedan escalar. Los siguientes campeones son adc hipercarrys:
+                    </p>
+                </div>
+
+                <div class="wow animate__animated animate__fadeInRightBig">
+                <h3 id="adc-caster">adc casters</h3>
+                    <p>
+                        Este tipo de adc dependen principalmente de sus habilidades para meter la mayor cantidad de daño,
+                        por lo general son skill shots.
+                        Esto no quiere decir que no tengan que usar sus ataques básicos, todo lo contrario. Los siguientes
+                        campeones son adc casters:
+                    </p>
+                </div>
+
+                <div class="wow animate__animated animate__fadeInLeftBig">
+                    <h3 id="adc-asedio">adc de asedio</h3>
+                    <p>
+                        Este tipo de adc son campeones que tienen muchisima limpieza de oleadas y usan sus ataques basicos
+                        y/o habilidades para desgastar al enemigo, para que este no pueda pelear.
+                        Los siguientes campeones son adc de asedio:
+                    </p>
+                </div>
             </div>
-            <div class="section-guiaAdc__cont-texto">
-                <h2 class="wow animate__animated animate__fadeInLeftBig">Posicionamiento</h2>
-                <p class="wow animate__animated animate__fadeInLeftBig">
-                    El posicionamiento del adc es la clave para ganar las peleas en equipo, ya que es el encargado de
-                    meter la mayor cantidad de dps (daño por segundo) posible, y si muere al comienzo
-                    de la pelea, el equipo no va a poder hacer nada. Por eso en el siguiente video voy a explicar como
-                    posicionarse.
-                </p>
+
+            <div class="section-guiaAdc__cont-texto wow animate__animated animate__fadeInRightBig">
+                <h2>Micro game como adc</h2>
+                <div id="posicionamiento">
+                    <h3>Posicionamiento</h3>
+                    <p>
+                        El posicionamiento del adc es la clave para ganar las peleas en equipo, ya que es el encargado
+                        de
+                        meter la mayor cantidad de dps (daño por segundo) posible, y si muere al comienzo
+                        de la pelea, el equipo no va a poder hacer nada. Por eso en el siguiente video voy a explicar
+                        como
+                        posicionarse.
+                    </p>
+                </div>
+                <div id="triangulacion">
+                    <h3>Triangulación</h3>
+                    <p>
+
+                    </p>
+                </div>
             </div>
-            <div class="section-guiaAdc__cont-texto">
-                <h2 class="wow animate__animated animate__fadeInLeftBig">Itemización</h2>
-                <p class="wow animate__animated animate__fadeInLeftBig">
-                    En la página de avanzado ya expliqué la tienda y los objetos de manera general, y ahora voy a
-                    explicar de manera detallada los items que se suelen armar los adc.
-                </p>
-            </div>
-            <div class="section-guiaAdc__cont-texto">
-                <h2 class="wow animate__animated animate__fadeInLeftBig">Wardeo</h2>
-                <p class="wow animate__animated animate__fadeInLeftBig">
-                    Muchas veces se suele decir que wardear depende unicamente del soporte y esto es completamente
-                    falso. El soporte es quien más debe wardear, pero no es el único. Por eso
-                    voy a explicar como debe ayudar con la visión el adc.
-                </p>
-            </div>
-            <div class="section-guiaAdc__cont-texto">
-                <h2 class="wow animate__animated animate__fadeInLeftBig">Triangulación</h2>
-                <p class="wow animate__animated animate__fadeInLeftBig">
-                    
-                </p>
+
+            <div class="section-guiaAdc__cont-texto wow animate__animated animate__fadeInLeftBig">
+                <h2>Macro game como adc</h2>
+                <div id="itemizacion">
+                    <h3>Itemización</h3>
+                    <p>
+                        En la página de avanzado ya expliqué la tienda y los objetos de manera general, y ahora voy a
+                        explicar de manera detallada los items que se suelen armar los adc.
+                    </p>
+                </div>
+
+                <div id="wardeo">
+                    <h3>Wardeo</h3>
+                    <p>
+                        Muchas veces se suele decir que wardear depende unicamente del soporte y esto es completamente
+                        falso. El soporte es quien más debe wardear, pero no es el único. Por eso
+                        voy a explicar como debe ayudar con la visión el adc.
+                    </p>
+                </div>
             </div>
         </section>
     </main>

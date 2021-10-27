@@ -88,20 +88,68 @@
     <!-- cuerpo principal -->
     <main id="main-avanzado">
         <!-- banner -->
-            <div class="banner-avanzado">
+            <div id="banner" class="banner-avanzado">
             </div>
             <div class="cont-titulo-avanzado">
                 <h1 class="cont-titulo-avanzado__titulo animate__animated animate__backInDown">
                     Conocimiento avanzado
                 </h1>
             </div>
+
+        <!-- boton ir arriba -->
+        <a href="#banner" class="btn-up">
+            <i class="fas fa-arrow-circle-up"></i>
+        </a>
+
         <!-- contenido principal -->
         <section class="section2-avanzado">
+            <!-- dropdowns de bootstrap  -->
+            <div id="menu" class="cont-dropdowns">
+
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle boton-dropdown" type="button" id="dropdownMenuButton2"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Micro game
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark lista-dropdown" aria-labelledby="dropdownMenuButton2">
+                        <li><a class="dropdown-item" href="#micro-game">micro game</a></li>
+                        <li><a class="dropdown-item" href="#trades">Tradeos</a></li>
+                        <li><a class="dropdown-item" href="#objetos">Objetos</a></li>
+                        <li><a class="dropdown-item" href="#runas">Runas</a></li>
+                        <li><a class="dropdown-item" href="#farm">Farmeo</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle boton-dropdown" type="button" id="dropdownMenuButton2"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Macro game
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark lista-dropdown" aria-labelledby="dropdownMenuButton2">
+                        <li><a class="dropdown-item" href="#macro-game">macro game</a></li>
+                        <li><a class="dropdown-item" href="#tempo">Tempo</a></li>
+                        <li><a class="dropdown-item" href="#oleadas">Oleadas</a></li>
+                        <li><a class="dropdown-item" href="#estructuras">Estructuras</a></li>
+                        <li><a class="dropdown-item" href="#vision">Visión</a></li>
+                    </ul>
+                </div>
+                
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle boton-dropdown" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Mentalidad
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark lista-dropdown" aria-labelledby="dropdownMenuButton2">
+                        <li><a class="dropdown-item" href="#mental">Mentalidad</a></li>
+                        <li><a class="dropdown-item" href="#autocritica">Autocrítica</a></li>
+                        <li><a class="dropdown-item" href="#concentracion">concentración</a></li>
+                    </ul>
+                </div>
+            </div>
             <!-- explicacion sobre microgame -->
             <!-- este div es para los trades -->
             <div class="section2-avanzado__cont-textos">
-
-                <div class="wow animate__animated animate__fadeInLeftBig">
+                <div id="micro-game" class="wow animate__animated animate__fadeInLeftBig">
                     <h2>Micro juego</h2>
                     <h3>¿Qué es el micro game?</h3>
                     <p>
@@ -111,7 +159,7 @@
                     </p>
                 </div>
 
-                <div class="wow animate__animated animate__fadeInRightBig">
+                <div id="trades" class="wow animate__animated animate__fadeInRightBig">
                     <h3>Tradeos</h3>
                     <img src="./imgs/imagenes-avanzado/trades.png" alt="dos campeones pegandose en la mid lane">
                     <p>
@@ -139,7 +187,7 @@
                 </div>
 
                 <!-- este div es para la tienda -->
-                <div class="wow animate__animated animate__fadeInLeftBig">
+                <div id="objetos" class="wow animate__animated animate__fadeInLeftBig">
                     <h3>Objetos</h3>
                     <imgsrc="./imgs/imagenes-avanzado/tienda.png" alt="Tienda de objetos del lol">
                     <p>
@@ -155,7 +203,7 @@
                 </div>
 
                 <!-- este div es para las runas -->
-                <div class="wow animate__animated animate__fadeInRightBig">
+                <div id="runas" class="wow animate__animated animate__fadeInRightBig">
                     <h3>Runas</h3>
                     <img src="./imgs/imagenes-avanzado/runes.png" alt="página de runas">
                     <p>
@@ -167,7 +215,7 @@
                 </div>
 
                 <!-- este div es para el farm -->
-                <div class="wow animate__animated animate__fadeInLeftBig">
+                <div id="farm" class="wow animate__animated animate__fadeInLeftBig">
                     <h3>Farmeo</h3>
                     <img src="./imgs/imagenes-avanzado/farm.png" alt="un campeón a punto de last hitear los súbditos">
                     <p>
@@ -192,7 +240,7 @@
             <!-- explicacion sobre macrogame -->
             <div class="section2-avanzado__cont-textos">
 
-                <div class="wow animate__animated animate__fadeInRightBig">
+                <div id="macro-game" class="wow animate__animated animate__fadeInRightBig">
                     <h2>macro juego</h2>
                     <h3>¿Qué es el macro game?</h3>
                     <p>
@@ -202,7 +250,7 @@
                 </div>
                 
                 <!-- explicacion del tempo -->
-                <div class="wow animate__animated animate__fadeInLeftBig">
+                <div id="tempo" class="wow animate__animated animate__fadeInLeftBig">
                     <h3>Tempo</h3>
                     <p>
                         El tempo es algo dificil de definir, pero es algo así como los factores que determinan que equipo tiene más prioridad y presión sobre algo en particular. Por ejemplo, si está por salir el dragón 
@@ -212,7 +260,7 @@
                 </div>
 
                 <!-- explicacion de como manejar las oleadas -->
-                <div class="wow animate__animated animate__fadeInRightBig">
+                <div id="oleadas" class="wow animate__animated animate__fadeInRightBig">
                     <h3>Control de oleadas</h3>
                     <p>
                         El control de oleadas es algo fundamental, ya que con este se puede sacar muchísima ventaja sobre el enemigo, y sin un buen control de oleadas, por 
@@ -226,7 +274,7 @@
                 </div>
 
                 <!-- explicacion de que pasa al tirar estructuras -->
-                <div class="wow animate__animated animate__fadeInLeftBig">
+                <div id="estructuras" class="wow animate__animated animate__fadeInLeftBig">
                     <h3>Estructuras</h3>
                     <p>
                         Toda acción en el lol tiene consecuencias, tanto positivas como negativas, y tirar una torre/inhibidor no es la excepción. 
@@ -235,7 +283,7 @@
                 </div>
 
                 <!-- explicación de como wardear -->
-                <div class="wow animate__animated animate__fadeInRightBig">
+                <div id="vision" class="wow animate__animated animate__fadeInRightBig">
                     <h3>Visión</h3>
                     <p>
                         La visión es un factor muy importante, no solo a la hora de evitar gankeos, sino que también sirve para trackear al jungla enemigo
@@ -259,7 +307,7 @@
             <!-- la importancia de la mentalidad -->
             <div class="section2-avanzado__cont-textos">
 
-                <div class="wow animate__animated animate__fadeInLeftBig">
+                <div id="mental" class="wow animate__animated animate__fadeInLeftBig">
                     <h2>Mentalidad</h2>
                     <p>
                     Lo primero que hay que tener en cuenta a la hora de hablar de la mentalidad, es que el lol es un juego de estrategía y que pensar correctamente es tan importante como las mecánicas
@@ -273,7 +321,7 @@
                     </p>
                 </div>
 
-                <div class="wow animate__animated animate__fadeInRightBig">
+                <div id="autocritica" class="wow animate__animated animate__fadeInRightBig">
                     <h3>Autocrítica</h3>
                     <p>
                         Para que un jugador pueda mejorar es fundamental que sea autocrítico y entienda que si bien no todas las partidas que se pierden son su culpa, muchas si lo son. Ser autocrítico no es decir "soy una mierda jugando al lol" y no hacer nada. Ser autocrítico requiere de tener capacidad de correción, es decir,
@@ -282,7 +330,7 @@
                     </p>
                 </div>
 
-                <div class="wow animate__animated animate__fadeInLeftBig">
+                <div id="concentracion" class="wow animate__animated animate__fadeInLeftBig">
                     <h3>concentración</h3>
                     <p>
                         El League of Legends es un juego que demanda muchísima concentración, es decir que mientras jugamos no podemos estar mirando el celular, respondiendo whatsapp o hablando con la persona que tenemos al lado, sin que esto tenga una consecuencia negativa

@@ -18,7 +18,6 @@
   position: fixed;
   bottom: 5vh;
   right: 5vw;
-  z-index: 10000;
 }
 
 // mixins para los banners
@@ -86,7 +85,6 @@ header {
   width: 100vw;
   .nav-menu {
     background-color: #201f1f;
-
     //   css para el nav no-desplegable
     .cont-logo-btn {
       .logo {
@@ -261,7 +259,11 @@ header {
     .cont-dropdowns {
       display: flex;
       div {
-        margin: 2vw;
+        margin: 15vh 2vw 4vh 2vw;
+        .boton-dropdown {
+          background-color: #fdb82d;
+          color: black;
+        }
       }
     }
 
@@ -316,6 +318,16 @@ header {
   // css para el contenido principal de avanzado
   .section2-avanzado {
     @include flex;
+    .cont-dropdowns {
+      display: flex;
+      div {
+        margin: 15vh 2vw 4vh 2vw;
+        .boton-dropdown {
+          background-color: #fdb82d;
+          color: black;
+        }
+      }
+    }
     &__cont-textos {
       width: 50vw;
       margin: 5vh 0;
@@ -358,6 +370,16 @@ header {
   }
   .section-guiaAdc {
     @include flex;
+    .cont-dropdowns {
+      display: flex;
+      div {
+        margin: 15vh 2vw 4vh 2vw;
+        .boton-dropdown {
+          background-color: #fdb82d;
+          color: black;
+        }
+      }
+    }
     &__cont-texto {
       width: 50vw;
       h2 {
@@ -444,19 +466,29 @@ header {
 }
 
 @media screen and (max-width: 860px) {
+  // css responsive para el boton up
+  .btn-up i {
+    font-size: 50px;
+  }
+  .btn-up {
+    bottom: 7vh;
+    right: 2vw;
+    z-index: 10000;
+  }
   // css responsive para el header
   header {
     .nav-menu {
+      height: 18vh;
       //   css para el nav no-desplegable
       .cont-logo-btn {
         .logo {
-          width: 18vw;
+          width: 100px;
         }
         .cont-boton-responsive {
           margin-right: 4vw;
           .boton-novisible {
             .boton-responsive {
-              font-size: 5vw;
+              font-size: 40px;
             }
           }
         }
@@ -474,7 +506,7 @@ header {
         div {
           .link {
             padding: 4vh 0;
-            font-size: 14px;
+            font-size: 16px;
           }
         }
       }
@@ -519,13 +551,13 @@ header {
       width: 70vw;
       margin-bottom: 0;
       h2 {
-        font-size: 18px;
+        font-size: 20px;
         color: #ffaa00;
         text-align: center;
         padding-top: 10vh;
       }
       p {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 35px;
       }
       img {
@@ -544,11 +576,23 @@ header {
     }
     // css responsive para el contenido principal de fundamentos
     .section-fund {
+      .cont-dropdowns {
+        flex-direction: column;
+        div {
+          margin: 5vh 0;
+          .boton-dropdown {
+            width: 50vw;
+          }
+          .lista-dropdown {
+            width: 50vw;
+          }
+        }
+      }
       &__cont-texto {
         width: 70vw;
         padding: 7vh 0 0 0;
         p {
-          font-size: 14px;
+          font-size: 16px;
           line-height: 35px;
           padding-bottom: 5vh;
           a {
@@ -557,14 +601,14 @@ header {
           }
         }
         h4 {
-          font-size: 14px;
+          font-size: 16px;
           padding-top: 3vh;
         }
         h3 {
-          font-size: 16px;
+          font-size: 18px;
         }
         h2 {
-          font-size: 18px;
+          font-size: 20px;
           padding-bottom: 5vh;
         }
         img {
@@ -580,32 +624,37 @@ header {
     .banner-avanzado {
       height: 80vh;
     }
-    // css para el titulo de avanzado
-    .section1-avanzado {
-      &__cont-titulo {
-        padding-top: 20vh;
-      }
-    }
-
     // css para el contenido principal de avanzado
     .section2-avanzado {
+      .cont-dropdowns {
+        flex-direction: column;
+        div {
+          margin: 5vh 0;
+          .boton-dropdown {
+            width: 50vw;
+          }
+          .lista-dropdown {
+            width: 50vw;
+          }
+        }
+      }
       &__cont-textos {
         width: 70vw;
         margin: 5vh 0;
         h2 {
-          font-size: 18px;
+          font-size: 20px;
           padding: 2vh 0;
         }
         h3 {
-          font-size: 16px;
+          font-size: 18px;
           padding-top: 5vw;
         }
         h4 {
-          font-size: 14px;
+          font-size: 16px;
           padding-top: 3vh;
         }
         p {
-          font-size: 14px;
+          font-size: 16px;
           line-height: 35px;
         }
         img {
@@ -622,6 +671,18 @@ header {
       height: 80vh;
     }
     .section-guiaAdc {
+      .cont-dropdowns {
+        flex-direction: column;
+        div {
+          margin: 5vh 0;
+          .boton-dropdown {
+            width: 50vw;
+          }
+          .lista-dropdown {
+            width: 50vw;
+          }
+        }
+      }
       &__cont-titulo {
         width: 60vw;
       }
@@ -636,7 +697,7 @@ header {
           padding-top: 4vw;
         }
         p {
-          font-size: 14px;
+          font-size: 16px;
           padding: 2vw 0;
           line-height: 35px;
         }
