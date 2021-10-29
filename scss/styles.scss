@@ -495,11 +495,11 @@ header {
         display: flex;
         align-items: center;
         justify-content: center;
-      }
-      ul {
-        margin: 5vw;
-        a {
-          text-decoration: none;
+        ul {
+          margin: 5vw;
+          a {
+            text-decoration: none;
+          }
         }
       }
     }
@@ -528,7 +528,7 @@ header {
       //   css para el nav no-desplegable
       .cont-logo-btn {
         .logo {
-          width: 100px;
+          width: 250px;
         }
         .cont-boton-responsive {
           margin-right: 4vw;
@@ -542,6 +542,12 @@ header {
       // css para el nav desplegable
       .fondo-menu {
         div {
+          .cont-logo-menu-resp {
+            height: 20vh;
+            .logo-menu-resp {
+              width: 200px;
+            }
+          }
           .boton-cerrar {
             margin-right: 3vw;
           }
@@ -557,19 +563,28 @@ header {
   }
   // css responsive para el footer
   .footer {
+    .cont-logo-footer {
+      img {
+        width: 200px;
+      }
+    }
     // css para las redes sociales
     .cont-redes {
-      &__titulo {
-        font-size: 15px;
-        padding: 5vh 0 3vh 0;
-        width: 55vw;
-      }
       &__lista {
+        padding: 5vh 10vw;
         li {
-          padding-bottom: 4vh;
+          h2 {
+            font-size: 16px;
+          }
+          .icono-footer {
+            font-size: 16px;
+          }
           a {
-            margin-left: 2vw;
-            font-size: 13px;
+            font-size: 15px;
+            color: #ffffff;
+            i {
+              padding-right: 1vw;
+            }
           }
         }
       }
@@ -578,7 +593,7 @@ header {
     .cont-derechos {
       &__texto {
         width: 55vw;
-        font-size: 10px;
+        font-size: 14px;
         padding-top: 1vh;
       }
     }
@@ -788,11 +803,10 @@ header {
         .opgg {
           color: #ffaa00;
         }
-        ul {
-          padding-bottom: 0;
-        }
-        li {
-          padding: 5vh 5vw;
+        .cont-ul-conoceme {
+          ul {
+            margin: 1vw;
+          }
         }
       }
       &__icono {

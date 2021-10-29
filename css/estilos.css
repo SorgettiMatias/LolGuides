@@ -528,10 +528,10 @@ header .nav-menu .fondo-menu div .link:hover {
   align-items: center;
   justify-content: center;
 }
-#main-conoceme .section-conoceme__cont-texto ul {
+#main-conoceme .section-conoceme__cont-texto .cont-ul-conoceme ul {
   margin: 5vw;
 }
-#main-conoceme .section-conoceme__cont-texto ul a {
+#main-conoceme .section-conoceme__cont-texto .cont-ul-conoceme ul a {
   text-decoration: none;
 }
 #main-conoceme .section-conoceme__icono {
@@ -555,13 +555,19 @@ header .nav-menu .fondo-menu div .link:hover {
     height: 18vh;
   }
   header .nav-menu .cont-logo-btn .logo {
-    width: 100px;
+    width: 250px;
   }
   header .nav-menu .cont-logo-btn .cont-boton-responsive {
     margin-right: 4vw;
   }
   header .nav-menu .cont-logo-btn .cont-boton-responsive .boton-novisible .boton-responsive {
     font-size: 40px;
+  }
+  header .nav-menu .fondo-menu div .cont-logo-menu-resp {
+    height: 20vh;
+  }
+  header .nav-menu .fondo-menu div .cont-logo-menu-resp .logo-menu-resp {
+    width: 200px;
   }
   header .nav-menu .fondo-menu div .boton-cerrar {
     margin-right: 3vw;
@@ -571,21 +577,28 @@ header .nav-menu .fondo-menu div .link:hover {
     font-size: 16px;
   }
 
-  .footer .cont-redes__titulo {
-    font-size: 15px;
-    padding: 5vh 0 3vh 0;
-    width: 55vw;
+  .footer .cont-logo-footer img {
+    width: 200px;
   }
-  .footer .cont-redes__lista li {
-    padding-bottom: 4vh;
+  .footer .cont-redes__lista {
+    padding: 5vh 10vw;
+  }
+  .footer .cont-redes__lista li h2 {
+    font-size: 16px;
+  }
+  .footer .cont-redes__lista li .icono-footer {
+    font-size: 16px;
   }
   .footer .cont-redes__lista li a {
-    margin-left: 2vw;
-    font-size: 13px;
+    font-size: 15px;
+    color: #ffffff;
+  }
+  .footer .cont-redes__lista li a i {
+    padding-right: 1vw;
   }
   .footer .cont-derechos__texto {
     width: 55vw;
-    font-size: 10px;
+    font-size: 14px;
     padding-top: 1vh;
   }
 
@@ -771,11 +784,8 @@ header .nav-menu .fondo-menu div .link:hover {
   #main-conoceme .section-conoceme__cont-texto .opgg {
     color: #ffaa00;
   }
-  #main-conoceme .section-conoceme__cont-texto ul {
-    padding-bottom: 0;
-  }
-  #main-conoceme .section-conoceme__cont-texto li {
-    padding: 5vh 5vw;
+  #main-conoceme .section-conoceme__cont-texto .cont-ul-conoceme ul {
+    margin: 1vw;
   }
   #main-conoceme .section-conoceme__icono {
     color: white;
