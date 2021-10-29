@@ -6,9 +6,14 @@
   scroll-behavior: smooth;
 }
 
+// css para la pagina 404
 .cont-error {
   text-align: center;
   margin-top: 10vh;
+
+  .teemo {
+    width: 15%;
+  }
 
   h1 {
     font-size: 3vw;
@@ -31,22 +36,18 @@
   }
 }
 
-.teemo {
-  width: 15%;
-}
-
-.btn-up i {
-  color: #ffaa00;
-  background: black;
-  font-size: 5rem;
-  padding: 0rem;
-  border-radius: 160rem;
-}
-
+// css para el boton para subir
 .btn-up {
   position: fixed;
   bottom: 5vh;
   right: 5vw;
+  i {
+    color: #ffaa00;
+    background: black;
+    font-size: 5rem;
+    padding: 0rem;
+    border-radius: 160rem;
+  }
 }
 
 // mixins para los banners
@@ -101,7 +102,7 @@
   text-align: left;
 }
 
-// mixins para los elementos flexibles
+// mixins para los elementos flexibles, pero en columna
 @mixin flex {
   display: flex;
   flex-direction: column;
@@ -134,12 +135,13 @@ header {
 
     // css para el nav desplegable
     .fondo-menu {
-      background-color: #201f1f;
+      background-color: #090808;
       div {
-        .lolguide {
-          color: white;
-          font-size: 1.5vw;
-          text-transform: uppercase;
+        .cont-logo-menu-resp {
+          height: 10vh;
+          .logo-menu-resp {
+            width: 20vw;
+          }
         }
         .boton-cerrar {
           background-color: white;
@@ -193,11 +195,14 @@ header {
           font-size: 2vw;
         }
         a {
-          color: #7e7e7e;
+          color: #adabab;
           text-decoration: none;
           margin-left: 1vw;
           font-size: 1.5vw;
           transition: all 1s;
+          i {
+            padding-right: 1vw;
+          }
         }
         a:hover {
           color: #ffffff;
@@ -223,7 +228,7 @@ header {
 
 // css para el banner
 .banner {
-  background-image: url(../imgs/banner-2-real.jpg);
+  background-image: url(../imgs/imgenes-index/banner-index.jpg);
   @include banners;
 }
 
@@ -537,9 +542,6 @@ header {
       // css para el nav desplegable
       .fondo-menu {
         div {
-          .lolguide {
-            font-size: 16px;
-          }
           .boton-cerrar {
             margin-right: 3vw;
           }

@@ -40,7 +40,7 @@
         <nav class="navbar nav-menu fixed-top">
             <div class="container-fluid cont-logo-btn">
                 <a href="Index.html">
-                    <img class="logo" src="./imgs/LOGO.png" alt="Logo de League of Legends">
+                    <img class="logo" src="./imgs/LOGO.png" alt="Logo de lolguides">
                 </a>
                 <div class="cont-boton-responsive">
                     <button class="boton-novisible" type="button" data-bs-toggle="offcanvas"
@@ -56,7 +56,9 @@
             <div class="offcanvas offcanvas-end fondo-menu" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title lolguide" id="offcanvasNavbarLabel">Lolguides</h5>
+                    <div class="cont-logo-menu-resp">
+                        <img class="logo-menu-resp" src="./imgs/logo.png" alt="logo de lolguides">
+                    </div>
                     <button type="button" class="btn-close text-reset boton-cerrar" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
                 </div>
@@ -91,74 +93,91 @@
                 Acerca de mí
             </h1>
         </div>
+
+
+        <!-- contenido principal de conoceme -->
         <section class="section-conoceme">
             <div class="section-conoceme__cont-texto">
-                <h2 class="wow animate__animated animate__fadeInLeftBig">¿Quién soy?</h2>
-                <p class="wow animate__animated animate__fadeInLeftBig">
-                    Soy Zairos, un jugador amateur de League of Legends, juego en el servidor de Latino América
-                    Sur y hago streaming en twitch.
-                </p>
-                <h3 class="wow animate__animated animate__fadeInLeftBig">¿Por que creé esta página web?</h3>
-                <p class="wow animate__animated animate__fadeInLeftBig">
-                    Decidí crear esta página porque el League of Legends es un juego extremadamente dificil y siento que
-                    a mucha gente le cuesta
-                    aprender a jugarlo bien. Además de que es mi juego favorito y me genera mucha pasión todo lo
-                    relacionado a el.
-                </p>
-                <h3 class="wow animate__animated animate__fadeInLeftBig">Campeones favoritos</h3>
-
-                <!-- carrusel de bootstrap -->
-                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./imgs/imagenes-conoceme/kaisa.png" class="d-block w-100" alt="campeon kaisa">
-                            <div class="carousel-caption d-md-block cont-titulo-carrusel">
-                                <h5 class="titulo-carrusel">Kaisa</h5>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./imgs/imagenes-conoceme/kalista.png" class="d-block w-100" alt="campeon kalista">
-                            <div class="carousel-caption d-md-block cont-titulo-carrusel">
-                                <h5 class="titulo-carrusel">Kalista</h5>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./imgs/imagenes-conoceme/vayne.png" class="d-block w-100" alt="campeon vayne">
-                            <div class="carousel-caption d-md-block cont-titulo-carrusel">
-                                <h5 class="titulo-carrusel">Vayne</h5>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./imgs/imagenes-conoceme/lucian.png" class="d-block w-100" alt="campeon vayne">
-                            <div class="carousel-caption d-md-block cont-titulo-carrusel">
-                                <h5 class="titulo-carrusel">Lucian</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                <div class="wow animate__animated animate__fadeInLeftBig">
+                    <h2>¿Quién soy?</h2>
+                    <p>
+                        Soy Zairos, un jugador amateur de League of Legends, juego en el servidor de Latino América
+                        Sur y hago streaming en twitch.
+                    </p>
                 </div>
-                <p class="wow animate__animated animate__fadeInLeftBig">
-                    Siempre voy variando mis picks dependiendo del meta, pero esos son los campeones que más me gustan.
-                </p>
 
-                <h3 class="wow animate__animated animate__fadeInLeftBig">Cuenta de lol</h3>
-                <p class="wow animate__animated animate__fadeInLeftBig">
-                    La cuenta en la que estoy jugando actualmente es:
-                    <a class="opgg"
-                        href="https://las.op.gg/summoner/userName=sh%C3%ADnichi+kudo">https://las.op.gg/summoner/userName=sh%C3%ADnichi+kudo</a>
-                </p>
-                <h2>Mis redes</h2>
+                <div class="wow animate__animated animate__fadeInRightBig">
+                    <h3>¿Por que creé esta página web?</h3>
+                    <p>
+                        Decidí crear esta página porque el League of Legends es un juego extremadamente dificil y siento
+                        que
+                        a mucha gente le cuesta
+                        aprender a jugarlo bien. Además de que es mi juego favorito y me genera mucha pasión todo lo
+                        relacionado a el.
+                    </p>
+                </div>
 
-                <div class="cont-ul-conoceme">
+                <div class="wow animate__animated animate__fadeInLeftBig">
+                    <h3>Campeones favoritos</h3>
+                    <!-- carrusel de bootstrap -->
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./imgs/imagenes-conoceme/kaisa.png" class="d-block w-100" alt="campeon kaisa">
+                                <div class="carousel-caption d-md-block cont-titulo-carrusel">
+                                    <h5 class="titulo-carrusel">Kaisa</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./imgs/imagenes-conoceme/kalista.png" class="d-block w-100"
+                                    alt="campeon kalista">
+                                <div class="carousel-caption d-md-block cont-titulo-carrusel">
+                                    <h5 class="titulo-carrusel">Kalista</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./imgs/imagenes-conoceme/vayne.png" class="d-block w-100" alt="campeon vayne">
+                                <div class="carousel-caption d-md-block cont-titulo-carrusel">
+                                    <h5 class="titulo-carrusel">Vayne</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./imgs/imagenes-conoceme/lucian.png" class="d-block w-100"
+                                    alt="campeon vayne">
+                                <div class="carousel-caption d-md-block cont-titulo-carrusel">
+                                    <h5 class="titulo-carrusel">Lucian</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <p>
+                        Siempre voy variando mis picks dependiendo del meta, pero esos son los campeones que más me
+                        gustan.
+                    </p>
+                </div>
+
+                <div class="wow animate__animated animate__fadeInRightBig">
+                    <h3>Cuenta de lol</h3>
+                    <p>
+                        La cuenta en la que estoy jugando actualmente es:
+                        <a class="opgg"
+                            href="https://las.op.gg/summoner/userName=sh%C3%ADnichi+kudo">https://las.op.gg/summoner/userName=sh%C3%ADnichi+kudo</a>
+                    </p>
+                    <h2>Mis redes</h2>
+                </div>
+
+
+                <div class="cont-ul-conoceme wow animate__animated animate__fadeInLeftBig">
                     <ul>
                         <li>
                             <a href="https://www.instagram.com/matiassorgetti/">
@@ -166,7 +185,7 @@
                                 <h3>Instagram</h3>
                             </a>
                         </li>
-                        
+
                         <li>
                             <a href="error404.html">
                                 <i class="fab fa-facebook-square section-conoceme__icono"></i>

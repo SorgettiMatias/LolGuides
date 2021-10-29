@@ -10,6 +10,9 @@
   text-align: center;
   margin-top: 10vh;
 }
+.cont-error .teemo {
+  width: 15%;
+}
 .cont-error h1 {
   font-size: 3vw;
   text-transform: uppercase;
@@ -28,22 +31,17 @@
   color: #161515;
 }
 
-.teemo {
-  width: 15%;
+.btn-up {
+  position: fixed;
+  bottom: 5vh;
+  right: 5vw;
 }
-
 .btn-up i {
   color: #ffaa00;
   background: black;
   font-size: 5rem;
   padding: 0rem;
   border-radius: 160rem;
-}
-
-.btn-up {
-  position: fixed;
-  bottom: 5vh;
-  right: 5vw;
 }
 
 header {
@@ -67,12 +65,13 @@ header .nav-menu .cont-logo-btn .cont-boton-responsive .boton-novisible .boton-r
   color: #ffaa00;
 }
 header .nav-menu .fondo-menu {
-  background-color: #201f1f;
+  background-color: #090808;
 }
-header .nav-menu .fondo-menu div .lolguide {
-  color: white;
-  font-size: 1.5vw;
-  text-transform: uppercase;
+header .nav-menu .fondo-menu div .cont-logo-menu-resp {
+  height: 10vh;
+}
+header .nav-menu .fondo-menu div .cont-logo-menu-resp .logo-menu-resp {
+  width: 20vw;
 }
 header .nav-menu .fondo-menu div .boton-cerrar {
   background-color: white;
@@ -122,11 +121,14 @@ header .nav-menu .fondo-menu div .link:hover {
   font-size: 2vw;
 }
 .footer .cont-redes__lista li a {
-  color: #7e7e7e;
+  color: #adabab;
   text-decoration: none;
   margin-left: 1vw;
   font-size: 1.5vw;
   transition: all 1s;
+}
+.footer .cont-redes__lista li a i {
+  padding-right: 1vw;
 }
 .footer .cont-redes__lista li a:hover {
   color: #ffffff;
@@ -141,7 +143,7 @@ header .nav-menu .fondo-menu div .link:hover {
 }
 
 .banner {
-  background-image: url(../imgs/banner-2-real.jpg);
+  background-image: url(../imgs/imgenes-index/banner-index.jpg);
   width: 100vw;
   height: 100vh;
   background-repeat: no-repeat;
@@ -560,9 +562,6 @@ header .nav-menu .fondo-menu div .link:hover {
   }
   header .nav-menu .cont-logo-btn .cont-boton-responsive .boton-novisible .boton-responsive {
     font-size: 40px;
-  }
-  header .nav-menu .fondo-menu div .lolguide {
-    font-size: 16px;
   }
   header .nav-menu .fondo-menu div .boton-cerrar {
     margin-right: 3vw;
