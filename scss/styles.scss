@@ -493,6 +493,9 @@ header {
       }
       ul {
         margin: 5vw;
+        a {
+          text-decoration: none;
+        }
       }
     }
     &__icono {

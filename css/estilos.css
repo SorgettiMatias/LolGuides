@@ -529,6 +529,9 @@ header .nav-menu .fondo-menu div .link:hover {
 #main-conoceme .section-conoceme__cont-texto ul {
   margin: 5vw;
 }
+#main-conoceme .section-conoceme__cont-texto ul a {
+  text-decoration: none;
+}
 #main-conoceme .section-conoceme__icono {
   color: white;
   font-size: 15vw;
