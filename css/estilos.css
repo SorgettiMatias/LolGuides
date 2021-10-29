@@ -50,16 +50,16 @@ header {
   width: 100vw;
 }
 header .nav-menu {
-  background-color: #201f1f;
+  background-color: #111;
 }
 header .nav-menu .cont-logo-btn .logo {
-  width: 12vw;
+  width: 20vw;
 }
 header .nav-menu .cont-logo-btn .cont-boton-responsive {
   margin-right: 2vw;
 }
 header .nav-menu .cont-logo-btn .cont-boton-responsive .boton-novisible {
-  background-color: #201f1f;
+  background-color: #111;
   border: none;
 }
 header .nav-menu .cont-logo-btn .cont-boton-responsive .boton-novisible .boton-responsive {
@@ -93,32 +93,43 @@ header .nav-menu .fondo-menu div .link:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #201f1f;
+  background-color: #111;
 }
-.footer .cont-redes__titulo {
-  color: #ffaa00;
-  font-size: 2vw;
-  text-transform: capitalize;
-  padding: 3vw 0;
-  width: 40vw;
-  text-align: center;
+.footer .cont-logo-footer img {
+  width: 25vw;
+  filter: brightness(2);
+}
+.footer .cont-redes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .footer .cont-redes__lista {
   color: #ffffffea;
   list-style: none;
+  padding: 5vh 10vw;
 }
 .footer .cont-redes__lista li {
   padding-bottom: 2vw;
 }
+.footer .cont-redes__lista li h2 {
+  color: #fdb82d;
+  font-size: 2vw;
+  text-transform: capitalize;
+  text-align: center;
+}
+.footer .cont-redes__lista li .icono-footer {
+  font-size: 2vw;
+}
 .footer .cont-redes__lista li a {
-  color: #ffaa00;
+  color: #7e7e7e;
   text-decoration: none;
   margin-left: 1vw;
   font-size: 1.5vw;
   transition: all 1s;
 }
 .footer .cont-redes__lista li a:hover {
-  color: #ffffffea;
+  color: #ffffff;
 }
 .footer .cont-derechos__texto {
   width: 40vw;
@@ -169,7 +180,7 @@ header .nav-menu .fondo-menu div .link:hover {
   justify-content: center;
   align-items: center;
   padding: 10vh 0;
-  background-color: #262a31;
+  background-color: #181a1f;
 }
 .section__cont-textos {
   width: 50vw;
@@ -221,7 +232,7 @@ header .nav-menu .fondo-menu div .link:hover {
   animation-duration: 1.5s;
 }
 #main-fundamentos .section-fund {
-  background-color: #262a31;
+  background-color: #181a1f;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -285,7 +296,7 @@ header .nav-menu .fondo-menu div .link:hover {
 }
 
 #main-avanzado {
-  background-color: #262a31;
+  background-color: #181a1f;
 }
 #main-avanzado .banner-avanzado {
   width: 100vw;
@@ -365,7 +376,7 @@ header .nav-menu .fondo-menu div .link:hover {
 }
 
 #main-adc {
-  background-color: #262a31;
+  background-color: #181a1f;
 }
 #main-adc .banner-adc {
   width: 100vw;
@@ -438,7 +449,7 @@ header .nav-menu .fondo-menu div .link:hover {
 }
 
 #main-conoceme {
-  background-color: #262a31;
+  background-color: #181a1f;
 }
 #main-conoceme .banner-conoceme {
   width: 100vw;

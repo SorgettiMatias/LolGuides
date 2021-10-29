@@ -113,16 +113,16 @@
 header {
   width: 100vw;
   .nav-menu {
-    background-color: #201f1f;
+    background-color: #111;
     //   css para el nav no-desplegable
     .cont-logo-btn {
       .logo {
-        width: 12vw;
+        width: 20vw;
       }
       .cont-boton-responsive {
         margin-right: 2vw;
         .boton-novisible {
-          background-color: #201f1f;
+          background-color: #111;
           border: none;
           .boton-responsive {
             font-size: 4vw;
@@ -164,32 +164,43 @@ header {
 // css para el footer
 .footer {
   @include flex;
-  background-color: #201f1f;
+  background-color: #111;
 
+  .cont-logo-footer {
+    img {
+      width: 25vw;
+      filter: brightness(2);
+    }
+  }
   // css para las redes sociales
   .cont-redes {
-    &__titulo {
-      color: #ffaa00;
-      font-size: 2vw;
-      text-transform: capitalize;
-      padding: 3vw 0;
-      width: 40vw;
-      text-align: center;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
     &__lista {
       color: #ffffffea;
       list-style: none;
+      padding: 5vh 10vw;
       li {
         padding-bottom: 2vw;
+        h2 {
+          color: #fdb82d;
+          font-size: 2vw;
+          text-transform: capitalize;
+          text-align: center;
+        }
+        .icono-footer {
+          font-size: 2vw;
+        }
         a {
-          color: #ffaa00;
+          color: #7e7e7e;
           text-decoration: none;
           margin-left: 1vw;
           font-size: 1.5vw;
           transition: all 1s;
         }
         a:hover {
-          color: #ffffffea;
+          color: #ffffff;
         }
       }
     }
@@ -241,7 +252,7 @@ header {
 .section {
   @include flex;
   padding: 10vh 0;
-  background-color: #262a31;
+  background-color: #181a1f;
   &__cont-textos {
     width: 50vw;
     margin-bottom: 10vh;
@@ -280,7 +291,7 @@ header {
 
   // css para el contenido principal de fundamentos
   .section-fund {
-    background-color: #262a31;
+    background-color: #181a1f;
     @include flex;
 
     .cont-dropdowns {
@@ -326,7 +337,7 @@ header {
 
 // css para Avanzado
 #main-avanzado {
-  background-color: #262a31;
+  background-color: #181a1f;
   // css para el banner de avanzado
   .banner-avanzado {
     @include banners;
@@ -380,7 +391,7 @@ header {
 
 // css para adcGuide
 #main-adc {
-  background-color: #262a31;
+  background-color: #181a1f;
   .banner-adc {
     @include banners;
     background-image: url(../imgs/imagenes-AdcGuide/banner-adc.png);
@@ -432,7 +443,7 @@ header {
 
 // css para conoceme
 #main-conoceme {
-  background-color: #262a31;
+  background-color: #181a1f;
   .banner-conoceme {
     @include banners;
     background-image: url(../imgs/imagenes-conoceme/banner-conoceme.png);
