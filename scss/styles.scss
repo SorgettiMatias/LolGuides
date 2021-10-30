@@ -470,10 +470,10 @@ header {
       padding-top: 15vh;
       .slide {
         padding-bottom: 3vh;
-      }
-      .slide img {
-        height: 80vh;
-        width: 70vw;
+        img {
+          height: 80vh;
+          width: 70vw;
+        }
       }
       .titulo-carrusel {
         font-size: 4vw;
@@ -626,6 +626,7 @@ header {
       }
     }
   }
+
   // css responsive para fundamentos principales
 
   #main-fundamentos {
@@ -723,7 +724,7 @@ header {
     }
   }
 
-  // css para adcGuide
+  // css responsive para adcGuide
   #main-adc {
     .banner-adc {
       height: 80vh;
@@ -740,9 +741,6 @@ header {
             width: 50vw;
           }
         }
-      }
-      &__cont-titulo {
-        width: 60vw;
       }
       &__cont-texto {
         width: 70vw;
@@ -781,10 +779,10 @@ header {
         padding-top: 15vh;
         .slide {
           padding-bottom: 10vh;
-        }
-        .slide img {
-          height: 40vh;
-          width: 80vw;
+          img {
+            height: 40vh;
+            width: 80vw;
+          }
         }
         .titulo-carrusel {
           font-size: 25px;
@@ -808,11 +806,6 @@ header {
             margin: 1vw;
           }
         }
-      }
-      &__icono {
-        color: white;
-        font-size: 15vw;
-        text-decoration: none;
       }
     }
   }

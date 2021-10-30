@@ -726,9 +726,6 @@ header .nav-menu .fondo-menu div .link:hover {
   #main-adc .section-guiaAdc .cont-dropdowns div .lista-dropdown {
     width: 50vw;
   }
-  #main-adc .section-guiaAdc__cont-titulo {
-    width: 60vw;
-  }
   #main-adc .section-guiaAdc__cont-texto {
     width: 70vw;
   }
@@ -786,11 +783,6 @@ header .nav-menu .fondo-menu div .link:hover {
   }
   #main-conoceme .section-conoceme__cont-texto .cont-ul-conoceme ul {
     margin: 1vw;
-  }
-  #main-conoceme .section-conoceme__icono {
-    color: white;
-    font-size: 15vw;
-    text-decoration: none;
   }
 }
 
