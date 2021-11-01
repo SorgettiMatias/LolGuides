@@ -13,6 +13,13 @@
 .cont-error .teemo {
   width: 15%;
 }
+.cont-error .cont-teem-hongo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .cont-error h1 {
   font-size: 3vw;
   text-transform: uppercase;
@@ -144,10 +151,11 @@ header .nav-menu .fondo-menu div .link:hover {
 
 .banner {
   background-image: url(../imgs/imgenes-index/banner-index.jpg);
-  width: 100vw;
   height: 100vh;
+  width: 100%;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
+  min-height: 600px;
   filter: brightness(0.6);
   background-attachment: fixed;
 }
@@ -212,10 +220,11 @@ header .nav-menu .fondo-menu div .link:hover {
 }
 
 #main-fundamentos .banner-fundamentos {
-  width: 100vw;
   height: 100vh;
+  width: 100%;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
+  min-height: 600px;
   filter: brightness(0.6);
   background-attachment: fixed;
   background-image: url(../imgs/imagenes-fundamentos/banner-fundamentos.png);
@@ -301,10 +310,11 @@ header .nav-menu .fondo-menu div .link:hover {
   background-color: #181a1f;
 }
 #main-avanzado .banner-avanzado {
-  width: 100vw;
   height: 100vh;
+  width: 100%;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
+  min-height: 600px;
   filter: brightness(0.6);
   background-attachment: fixed;
   background-image: url(../imgs/imagenes-avanzado/banner-avanzado.png);
@@ -381,10 +391,11 @@ header .nav-menu .fondo-menu div .link:hover {
   background-color: #181a1f;
 }
 #main-adc .banner-adc {
-  width: 100vw;
   height: 100vh;
+  width: 100%;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
+  min-height: 600px;
   filter: brightness(0.6);
   background-attachment: fixed;
   background-image: url(../imgs/imagenes-AdcGuide/banner-adc.png);
@@ -454,10 +465,11 @@ header .nav-menu .fondo-menu div .link:hover {
   background-color: #181a1f;
 }
 #main-conoceme .banner-conoceme {
-  width: 100vw;
   height: 100vh;
+  width: 100%;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
+  min-height: 600px;
   filter: brightness(0.6);
   background-attachment: fixed;
   background-image: url(../imgs/imagenes-conoceme/banner-conoceme.png);
@@ -602,8 +614,11 @@ header .nav-menu .fondo-menu div .link:hover {
     padding-top: 1vh;
   }
 
-  .banner {
-    height: 80vh;
+  .cont-titulo-banner {
+    top: 47vh;
+  }
+  .cont-titulo-banner__titulo {
+    font-size: 10vw;
   }
 
   .section__cont-textos {
@@ -627,8 +642,11 @@ header .nav-menu .fondo-menu div .link:hover {
     max-width: 100%;
   }
 
-  #main-fundamentos .banner-fundamentos {
-    height: 80vh;
+  #main-fundamentos .cont-titulo-fund {
+    top: 47vh;
+  }
+  #main-fundamentos .cont-titulo-fund__titulo {
+    font-size: 10vw;
   }
   #main-fundamentos .section-fund .cont-dropdowns {
     flex-direction: column;
@@ -671,8 +689,11 @@ header .nav-menu .fondo-menu div .link:hover {
     width: 70vw;
   }
 
-  #main-avanzado .banner-avanzado {
-    height: 80vh;
+  #main-avanzado .cont-titulo-avanzado {
+    top: 47vh;
+  }
+  #main-avanzado .cont-titulo-avanzado__titulo {
+    font-size: 10vw;
   }
   #main-avanzado .section2-avanzado .cont-dropdowns {
     flex-direction: column;
@@ -711,8 +732,11 @@ header .nav-menu .fondo-menu div .link:hover {
     width: 70vw;
   }
 
-  #main-adc .banner-adc {
-    height: 80vh;
+  #main-adc .cont-titulo-adc {
+    top: 47vh;
+  }
+  #main-adc .cont-titulo-adc__titulo {
+    font-size: 10vw;
   }
   #main-adc .section-guiaAdc .cont-dropdowns {
     flex-direction: column;
@@ -747,11 +771,11 @@ header .nav-menu .fondo-menu div .link:hover {
     width: 70vw;
   }
 
-  #main-conoceme .banner-conoceme {
-    height: 80vh;
-  }
   #main-conoceme .cont-titulo-conoceme {
-    top: 40vh;
+    top: 47vh;
+  }
+  #main-conoceme .cont-titulo-conoceme__titulo {
+    font-size: 10vw;
   }
   #main-conoceme .section-conoceme__cont-texto {
     width: 70vw;

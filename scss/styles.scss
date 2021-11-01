@@ -15,6 +15,14 @@
     width: 15%;
   }
 
+  .cont-teem-hongo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   h1 {
     font-size: 3vw;
     text-transform: uppercase;
@@ -52,10 +60,11 @@
 
 // mixins para los banners
 @mixin banners {
-  width: 100vw;
   height: 100vh;
+  width: 100%;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
+  min-height: 600px;
   filter: brightness(0.6);
   background-attachment: fixed;
 }
@@ -278,11 +287,11 @@ header {
 
 // css para fundamentos principales
 #main-fundamentos {
+  // css para el banner de fundamentos
   .banner-fundamentos {
     @include banners;
     background-image: url(../imgs/imagenes-fundamentos/banner-fundamentos.png);
   }
-  // css para el título de fundamentos
   .cont-titulo-fund {
     @include cont-titulo-banner;
     top: 35vh;
@@ -600,8 +609,11 @@ header {
   }
 
   // css responsive para el banner de index
-  .banner {
-    height: 80vh;
+  .cont-titulo-banner {
+    top: 47vh;
+    &__titulo {
+      font-size: 10vw;
+    }
   }
   // css responsive para el main de index
   .section {
@@ -628,10 +640,12 @@ header {
   }
 
   // css responsive para fundamentos principales
-
   #main-fundamentos {
-    .banner-fundamentos {
-      height: 80vh;
+    .cont-titulo-fund {
+      top: 47vh;
+      &__titulo {
+        font-size: 10vw;
+      }
     }
     // css responsive para el contenido principal de fundamentos
     .section-fund {
@@ -680,8 +694,11 @@ header {
 
   // css responsive para avanzado
   #main-avanzado {
-    .banner-avanzado {
-      height: 80vh;
+    .cont-titulo-avanzado {
+      top: 47vh;
+      &__titulo {
+        font-size: 10vw;
+      }
     }
     // css para el contenido principal de avanzado
     .section2-avanzado {
@@ -726,8 +743,11 @@ header {
 
   // css responsive para adcGuide
   #main-adc {
-    .banner-adc {
-      height: 80vh;
+    .cont-titulo-adc {
+      top: 47vh;
+      &__titulo {
+        font-size: 10vw;
+      }
     }
     .section-guiaAdc {
       .cont-dropdowns {
@@ -767,11 +787,11 @@ header {
 
   // css responsive para conoceme
   #main-conoceme {
-    .banner-conoceme {
-      height: 80vh;
-    }
     .cont-titulo-conoceme {
-      top: 40vh;
+      top: 47vh;
+      &__titulo {
+        font-size: 10vw;
+      }
     }
     .section-conoceme {
       &__cont-texto {
