@@ -66,6 +66,7 @@
   background-size: 100% 100%;
   filter: brightness(0.6);
   background-attachment: fixed;
+  line-height: 0;
 }
 @mixin cont-titulo-banner {
   position: absolute;

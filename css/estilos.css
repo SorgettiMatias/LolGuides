@@ -157,6 +157,7 @@ header .nav-menu .fondo-menu div .link:hover {
   background-size: 100% 100%;
   filter: brightness(0.6);
   background-attachment: fixed;
+  line-height: 0;
 }
 
 .cont-titulo-banner {
@@ -225,6 +226,7 @@ header .nav-menu .fondo-menu div .link:hover {
   background-size: 100% 100%;
   filter: brightness(0.6);
   background-attachment: fixed;
+  line-height: 0;
   background-image: url(../imgs/imagenes-fundamentos/banner-fundamentos.png);
 }
 #main-fundamentos .cont-titulo-fund {
@@ -314,6 +316,7 @@ header .nav-menu .fondo-menu div .link:hover {
   background-size: 100% 100%;
   filter: brightness(0.6);
   background-attachment: fixed;
+  line-height: 0;
   background-image: url(../imgs/imagenes-avanzado/banner-avanzado.png);
 }
 #main-avanzado .cont-titulo-avanzado {
@@ -394,6 +397,7 @@ header .nav-menu .fondo-menu div .link:hover {
   background-size: 100% 100%;
   filter: brightness(0.6);
   background-attachment: fixed;
+  line-height: 0;
   background-image: url(../imgs/imagenes-AdcGuide/banner-adc.png);
 }
 #main-adc .cont-titulo-adc {
@@ -467,6 +471,7 @@ header .nav-menu .fondo-menu div .link:hover {
   background-size: 100% 100%;
   filter: brightness(0.6);
   background-attachment: fixed;
+  line-height: 0;
   background-image: url(../imgs/imagenes-conoceme/banner-conoceme.png);
 }
 #main-conoceme .cont-titulo-conoceme {
