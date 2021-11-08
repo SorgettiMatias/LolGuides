@@ -348,6 +348,15 @@ header .nav-menu .fondo-menu div .link:hover {
   width: 50vw;
   margin: 5vh 0;
 }
+#main-avanzado .section2-avanzado__cont-textos .cont-iframe {
+  width: 50vw;
+  height: 50vh;
+  margin-bottom: 10vh;
+}
+#main-avanzado .section2-avanzado__cont-textos .cont-iframe iframe {
+  width: 100%;
+  height: 100%;
+}
 #main-avanzado .section2-avanzado__cont-textos h2 {
   font-size: 2.5w;
   color: #ffaa00;
@@ -428,6 +437,26 @@ header .nav-menu .fondo-menu div .link:hover {
 #main-adc .section-guiaAdc__cont-texto {
   width: 50vw;
 }
+#main-adc .section-guiaAdc__cont-texto .slide {
+  padding-bottom: 3vh;
+}
+#main-adc .section-guiaAdc__cont-texto .slide .titulo-carrusel {
+  font-size: 4vw;
+  text-align: center;
+}
+#main-adc .section-guiaAdc__cont-texto .slide img {
+  height: 80vh;
+  width: 70vw;
+}
+#main-adc .section-guiaAdc__cont-texto .cont-iframe {
+  width: 50vw;
+  height: 50vh;
+  margin-bottom: 10vh;
+}
+#main-adc .section-guiaAdc__cont-texto .cont-iframe iframe {
+  width: 100%;
+  height: 100%;
+}
 #main-adc .section-guiaAdc__cont-texto h2 {
   font-size: 2.5w;
   color: #ffaa00;
@@ -495,13 +524,13 @@ header .nav-menu .fondo-menu div .link:hover {
 #main-conoceme .section-conoceme__cont-texto .slide {
   padding-bottom: 3vh;
 }
+#main-conoceme .section-conoceme__cont-texto .slide .titulo-carrusel {
+  font-size: 4vw;
+  text-align: center;
+}
 #main-conoceme .section-conoceme__cont-texto .slide img {
   height: 80vh;
   width: 70vw;
-}
-#main-conoceme .section-conoceme__cont-texto .titulo-carrusel {
-  font-size: 4vw;
-  text-align: center;
 }
 #main-conoceme .section-conoceme__cont-texto h3 {
   text-align: center;
@@ -706,6 +735,9 @@ header .nav-menu .fondo-menu div .link:hover {
     width: 70vw;
     margin: 5vh 0;
   }
+  #main-avanzado .section2-avanzado__cont-textos .cont-iframe {
+    width: 70vw;
+  }
   #main-avanzado .section2-avanzado__cont-textos h2 {
     font-size: 20px;
     padding: 2vh 0;
@@ -748,6 +780,20 @@ header .nav-menu .fondo-menu div .link:hover {
   #main-adc .section-guiaAdc__cont-texto {
     width: 70vw;
   }
+  #main-adc .section-guiaAdc__cont-texto .slide {
+    padding-bottom: 10vh;
+  }
+  #main-adc .section-guiaAdc__cont-texto .slide .titulo-carrusel {
+    font-size: 25px;
+    text-align: center;
+  }
+  #main-adc .section-guiaAdc__cont-texto .slide img {
+    height: 40vh;
+    width: 80vw;
+  }
+  #main-adc .section-guiaAdc__cont-texto .cont-iframe {
+    width: 70vw;
+  }
   #main-adc .section-guiaAdc__cont-texto h2 {
     font-size: 18px;
     padding-top: 4vw;
@@ -779,13 +825,13 @@ header .nav-menu .fondo-menu div .link:hover {
   #main-conoceme .section-conoceme__cont-texto .slide {
     padding-bottom: 10vh;
   }
+  #main-conoceme .section-conoceme__cont-texto .slide .titulo-carrusel {
+    font-size: 25px;
+    text-align: center;
+  }
   #main-conoceme .section-conoceme__cont-texto .slide img {
     height: 40vh;
     width: 80vw;
-  }
-  #main-conoceme .section-conoceme__cont-texto .titulo-carrusel {
-    font-size: 25px;
-    text-align: center;
   }
   #main-conoceme .section-conoceme__cont-texto h3 {
     font-size: 16px;
